@@ -1,7 +1,2 @@
-
-   let date = new Date();
-   let year = date.getFullYear();
-   document.getElementById("year").textContent = year;
-
-   let modified = document.lastModified;
-   document.getElementById("modified").textContent = modified;
+let lastModif = new Date(document.lastModified)  
+document.getElementById("lastUpdate").innerHTML = lastModif;
