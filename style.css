@@ -4,12 +4,21 @@
 body {
 background-image: linear-gradient( to top,#FFE9F3,white,white);
 
-
+max-width: 1080px;
+margin: 0 auto;
 
 font-family: "Poppins", "sans-serif", "Source Sans Pro", "sans-serif";
 
 
+padding:1.25em 1em; 
+display:grid;
+grid-template-columns: 1fr 1fr 1fr; 
+grid-gap: 1em; 
+margin-top:-3em; 
+
 }
+
+
 
 h2{
     color:#c9417e ;
@@ -17,16 +26,18 @@ h2{
        
  } 
 
+ img {
+
+    float: right;
+    width: 300px;
+    grid-column: 
+
+}
+
+
  header, footer  {
  background-color: #c9417e;
  text-align: center;  
  color: white;
 font-size: 20px;
  }
-img {
-
-    float: right;
-    width: 300px;
-     height: 300px;
-
-}
