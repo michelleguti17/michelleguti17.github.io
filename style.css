@@ -2,7 +2,7 @@
 
 
 body {
-background-image: linear-gradient( to top#FFE9F3,white,white);
+background-image: linear-gradient( to top,#FFE9F3,white,white);
 
 font-family: "Poppins", "sans-serif", "Source Sans Pro", "sans-serif";
 
@@ -20,5 +20,6 @@ h2{
 display: grid;
 grid-template-columns: 110px auto; 
 align-items: center;  
+
 
 }
