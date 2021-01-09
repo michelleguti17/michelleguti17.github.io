@@ -14,3 +14,12 @@ h2{
     font-family:"Poppins", "sans-serif", "Source Sans Pro", "sans-serif";   
        
  } 
+
+ header  {
+
+    display: grid;
+    grid-template-columns: 110px auto; 
+    align-items: center;  
+    
+    }
+    
