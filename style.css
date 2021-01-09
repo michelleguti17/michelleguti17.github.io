@@ -16,10 +16,8 @@ h2{
  } 
 
  header  {
-
-display: grid;
-grid-template-columns: 110px auto; 
+ background-color: #c9417e;
 align-items: center;  
+color: white;
 
-
-}
+ }
