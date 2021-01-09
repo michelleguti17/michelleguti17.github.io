@@ -15,9 +15,19 @@ h2{
        
  } 
 
- header  {
+ header, footer  {
  background-color: #c9417e;
-align-items: center;  
-color: white;
+ text-align: center;  
+ color: white;
 
+ }
+
+ .picture {
+     display: grid;
+     padding:1.25em 1em; 
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 1em; 
+    margin-top:-3em;  
+    grid-column: 3;
  }
