@@ -35,6 +35,7 @@ h2{
     float: right;
     width: 300px;
     grid-column: 3;
+    margin-top: -3;
 
 }
 
