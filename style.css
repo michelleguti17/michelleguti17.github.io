@@ -5,4 +5,12 @@ body {
 background-image: linear-gradient( to top#FFE9F3,white,white);
 
 font-family: "Poppins", "sans-serif", "Source Sans Pro", "sans-serif";
+
+
 }
+
+h1,h2,h3,h4,h5,h6{
+    color:#c9417e ;
+    font-family:"Poppins", "sans-serif", "Source Sans Pro", "sans-serif";   
+       
+    } 
