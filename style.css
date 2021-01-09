@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+
 body {
 
 background-color: #FFE9F3;
+font-family: "Poppins", "sans-serif", "Source Sans Pro", "sans-serif";
 }
