@@ -17,9 +17,8 @@ h2{
 
  header  {
 
-    display: grid;
-    grid-template-columns: 110px auto; 
-    align-items: center;  
-    
-    }
-    
+display: grid;
+grid-template-columns: 110px auto; 
+align-items: center;  
+
+}
