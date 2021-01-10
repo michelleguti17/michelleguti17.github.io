@@ -2,19 +2,9 @@
 
   
 
-
-
-
-
 body {
 background-image: linear-gradient( to top,#FFE9F3,white);
-
-
 font-family: "Poppins", "sans-serif", "Source Sans Pro", "sans-serif";
-
-
- 
-
 }
 
 main {
@@ -41,7 +31,7 @@ h2{
  img {
 
     float: right;
-    width: 400px;
+    width: 350px;
     margin-right: 16em;
     margin-top: -4em;
 
