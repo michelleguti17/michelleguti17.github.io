@@ -1,28 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Source+Sans+Pro:wght@300;400&display=swap');
 
+  
+
+
+
+
 
 body {
-background-image: linear-gradient( to top,#FFE9F3,white,white);
+background-image: linear-gradient( to top,#FFE9F3,white);
 
 
 font-family: "Poppins", "sans-serif", "Source Sans Pro", "sans-serif";
 
 
-padding:1.25em 1em; 
-display:grid;
-grid-template-columns: 1fr 1fr 1fr; 
-grid-gap: 1em; 
-margin-top:-3em; 
+ 
 
 }
 
-
-.page{
-    max-width: 1080px;
-margin: 0 auto;
-}
 main {
-    
+   
+max-width: 1900px;
+margin: 0 auto;
+height: 900px;
 background-color:#FFE9F3;
 
 
@@ -30,24 +29,47 @@ background-color:#FFE9F3;
 
 
 h2{
+      
     color:#c9417e ;
-    font-family:"Poppins", "sans-serif", "Source Sans Pro", "sans-serif";   
+    font-family:"Poppins", "sans-serif", "Source Sans Pro", "sans-serif";  
+    margin-left:12em; 
+
        
  } 
+
 
  img {
 
     float: right;
-    width: 300px;
-    grid-column: 3;
-    margin-top: -3;
+    width: 400px;
+    margin-right: 16em;
+    margin-top: -4em;
 
 }
 
 
- header, footer  {
+ header {
+
  background-color: #c9417e;
  text-align: center;  
  color: white;
 font-size: 20px;
+border-radius: 10px;
+;
+ }
+
+.list-lessons {
+  margin-left:14em; 
+  font-size: 20px;
+  margin-top: 2em;
+}
+
+ footer  {
+ background-color: #c9417e;
+ text-align: center;  
+ color: white;
+font-size: 20px;
+border-radius:60px;
+margin-top:-22em;
+border:2px  solid;
  }
