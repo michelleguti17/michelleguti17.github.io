@@ -2,9 +2,17 @@
 
   
 
+
+
+
+
 body {
-background-image: linear-gradient( to top,#FFE9F3,white);
+
+background-color: #FFE9F3;
+
 font-family: "Poppins", "sans-serif", "Source Sans Pro", "sans-serif";
+ 
+
 }
 
 main {
@@ -19,12 +27,11 @@ background-color:#FFE9F3;
 
 
 h2{
-      
+   
     color:#c9417e ;
     font-family:"Poppins", "sans-serif", "Source Sans Pro", "sans-serif";  
     margin-left:12em; 
-
-       
+     
  } 
 
 
@@ -33,7 +40,7 @@ h2{
     float: right;
     width: 350px;
     margin-right: 16em;
-    margin-top: -4em;
+  
 
 }
 
@@ -51,7 +58,9 @@ border-radius: 10px;
 .list-lessons {
   margin-left:14em; 
   font-size: 20px;
-  margin-top: 2em;
+  margin-top: 1em;
+  
+    color:#c9417e ;
 }
 
  footer  {
