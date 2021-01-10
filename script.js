@@ -1,8 +1,7 @@
-let d = new Date();
-let currentYear = d.getFullYear();
-document.getElementById("current_year").innerHTML = currentYear;
+let date = new Date();
+let currentYear = date.getFullYear();
+document.getElementById("currentYear").textContent = currentYear;
 
 
-//show to the user the last modified date
-let lastModified = new Date();
-document.getElementById("last_updated").innerHTML = lastModified.toUTCString();
+let lastUpdated = document.lastModified;
+document.getElementById('lastUpdated').textContent = lastUpdated;
