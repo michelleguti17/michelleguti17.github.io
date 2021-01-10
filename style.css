@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Source+Sans+Pro:wght@300;400&display=swap');
 
-  
-
-
-
 
 
 body {
@@ -24,6 +20,10 @@ background-color:#FFE9F3;
 
 
 }
+h1{
+  margin-right:16.5em;
+  
+}
 
 
 h2{
@@ -38,9 +38,9 @@ h2{
  img {
 
     float: right;
-    width: 350px;
-    margin-right: 16em;
-  
+    width: 300px;
+    margin-right: 12em;
+    margin-top:-8em;
 
 }
 
@@ -51,8 +51,11 @@ h2{
  text-align: center;  
  color: white;
 font-size: 20px;
-border-radius: 10px;
-;
+border-radius: 40px;
+width:1200px;
+margin-left: 10em;
+height:80px;
+
  }
 
 .list-lessons {
@@ -68,7 +71,9 @@ border-radius: 10px;
  text-align: center;  
  color: white;
 font-size: 20px;
-border-radius:60px;
+border-radius:40px;
 margin-top:-22em;
 border:2px  solid;
+width:1200px;
+margin-left: 10em;
  }
