@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Source+Sans+Pro:wght@600&display=swap');
+
+body{
+    background-color  :#1C9CF6;
+}
+header  {
+    background-color: #005DB3 ;
+    text-align: center;  
+    color: #FFFFFA;
+   border-radius:20px;
+   border:2px  solid;
+   margin:auto;
+   max-width:1200px;
+   min-width:300px;
+
+    }
+
+h1{
+    font-family: 'Merriweather Sans', sans-serif;
+   text-align: center;
+    color :#FFFFFA;
+    
+}
+
+#site-title{
+   
+    font-size: 26px;
+}
+
+#name{
+    margin-top: -0.5em;;
+    font-size: 24px;
+}
+
+
+nav ul {
+	list-style-type: none;
+	margin-top: 1.5em;
+	padding: 0;
+	overflow: hidden;
+}
+
+
+nav ul a {
+	display: block;
+    color: E3F4F;
+    background-color: #005DB3;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 24px;
+}
+nav a:hover {
+	background-color:#FFCD00 ;
+	color:#1C9CF6 ;
+}
+h2,h3,a{
+    font-family: 'Merriweather Sans', sans-serif;
+    color:#FFFFFA;
+  
+}
+p{
+   
+    font-family:'Source Sans Pro', sans-serif;
+    color:#FFFFFA;
+    font-size:18px;
+}
+
+#scenarios{
+   
+    font-family:'Source Sans Pro', sans-serif;
+    color:#FFFFFA;
+    font-size:16px;
+}
+li{
+    text-align: left;
+}
+table {
+     
+    border: outset 2px #005DB3; 
+    text-align:center;
+    margin: auto;
+   background-color: #005DB3;
+   font-family:'Source Sans Pro', sans-serif;
+   color:#FFFFFA;
+   margin-top: 2em;
+
+}
+tr,td,th {
+   
+    border: solid 2px #023436;
+    font-size:20px;
+
+}
+
+
+
+
+main{
+    background-color: #1C9CF6;
+    
+}
+
+
+
+#logo{
+margin-top: -1em;
+margin-bottom: -1em;
+}
+
+.demographics{
+    list-style-type: none;
+    font-family:'Source Sans Pro', sans-serif;
+    color:#FFFFFA;
+}
+#nav-table{
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 16px;
+   
+}
+
+
+.blue-color{
+   background-color: #005DB3;
+}
+.sky-color{
+    background-color:  #1C9CF6;
+
+}
+.white-color{
+    background-color: #FFFFFA;
+    color:  #1C9CF6;
+}
+
+.yellow-color{
+    background-color:#FFCD00;
+    color:  #1C9CF6;
+}
+footer  {
+    background-color: #005DB3 ;
+    text-align: center;  
+    color: white;
+   font-size: 20px;
+   border-radius:20px;
+   border:2px  solid;
+   max-width:1200px;
+   min-width:300px;
+   margin-bottom:-4em;
+   margin:  auto;
+   margin-top: 2em;
+    }
