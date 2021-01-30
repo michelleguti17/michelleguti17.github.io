@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Site Weather</title>
+    <link rel="stylesheet" href="CSS/small.css"/>
+    <link rel="stylesheet" href="CSS/medium.css"/>
+    <link rel="stylesheet" href="CSS/large.css"/>
+</head>
+<body>
+    <header> 
+        <img id=logo src="images/Weather.png" alt="logo">
+       
+        <section class="headings">
+            <h1 id="site-title">Preston Weather Site</h1>
+            <div class="motto">The precise forecast</div>
+        </section>
+    </header>
+ 
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776 Menu</button>
+            <ul id="primaryNav" class="hide">
+
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li class="active"><a href="preston-4.html">Preston</a></li>
+            <li ><a href="sodas-prings.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="storm-center.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <section class="holders" id="section1">
+            <h2>Hero image/weather summary</h2>
+        </section>
+        <section class="holders" id="section1">
+            <h2> 5 day forecast</h2>
+        </section>
+        <section class="holders" id="section1">
+            <h2>Article</h2>
+        </section>
+        <section class="holders" id="section1">
+            <h2>Contact Information</h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Preston Weather Site | Idaho | <a id="byuLink" href="https://www.byui.edu/online">BYUI Online Learning</a>   
+            <span id="lastUpdated">Last Updated</span>
+         </footer>
+            <script src="JS/script.js"></script>
+    </footer>
+</body>
+</html>
