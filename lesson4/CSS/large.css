@@ -6,16 +6,18 @@
         
         }
             nav button {display:none;}
-        nav ul.hide{
-            display:block;
+       
+            nav ul.hide{
+            display:flex;
             
         }
         
-        
+    
         
         nav ul li{
-        display:inline-flex;
-        margin-left:6em;
+         display: inline-flex;
+        flex:1 1  100%;
+        margin-left:4em;
   
        
         }
@@ -30,7 +32,7 @@
 
 
         main {
-             max-width:600px;  
+             max-width:64rem;  
             margin: 0 auto;
           }
 }
