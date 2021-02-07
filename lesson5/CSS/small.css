@@ -230,6 +230,20 @@ padding:10px;
     color:#FFFFFA;
     font-family:'Source Sans Pro', sans-serif;
 }
+
+#friday-banner{
+    display:none;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+    color:#FFFFFA;
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 20px;
+   height:50px;
+   text-align: center;
+    background-color: #FFCD00;
+    color: #1C9CF6;
+}
   footer  {
     background-color: #005DB3 ;
     text-align: center;  
