@@ -1,6 +1,6 @@
-let bannerDate = new Date();
-let dayOfWeek = bannerDate.getDay();
-let pancake = document.getElementById('pancake-day');
-if (dayOfWeek == 5) {
+const completeDate = new Date();
+let today = completeDate.getDay();
+let element = document.getElementById('friday-banner');
+if (today == 5) {
     element.style.display = "block";
 }
