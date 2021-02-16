@@ -12,3 +12,5 @@ const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Frida
 let currentDate = new Date()
 let actualDate = weekdays[currentDate.getDay()] + ", " + currentDate.getDate() + " " + months[currentDate.getMonth()] + " " + currentDate.getFullYear()
 document.getElementById('current-date').textContent = formattedDate;
+
+//WindChill 

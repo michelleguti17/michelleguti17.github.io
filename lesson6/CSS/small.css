@@ -1,0 +1,276 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Source+Sans+Pro:wght@600&display=swap');
+
+
+body{
+    background-color  :#1C9CF6;
+}
+header  {
+    background-color: #005DB3 ;
+    padding: 5px 0;
+	display: flex;
+    color: #FFFFFA;
+   border-radius:20px;
+   border:2px  solid;
+   margin:auto;
+   align-content:center;
+	justify-content:center;
+
+
+    }
+
+
+header img {
+	width: 64px;
+	height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+	font-size: 1.6rem;
+    margin: 0 0 0 15px;
+    font-family: 'Merriweather Sans', sans-serif;
+   text-align: center;
+    color :#FFFFFA;
+    margin-top: 0.3em;
+}
+
+.motto {
+    font-family:'Source Sans Pro', sans-serif;
+    font-style:italic;
+	letter-spacing: 1pt;
+    color :#FFFFFA;
+	margin-left: 20px;
+	font-size: 14px;
+}
+
+
+
+nav button{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border:none;
+    font-size: 1.6rem;
+    color: #fff;
+    
+}
+
+nav{
+    
+    margin-top: 2em;
+   background-color: #005DB3;
+   font-family: 'Merriweather Sans', sans-serif;
+   font-size: 18px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+nav ul li a{
+    display:block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255, 255, 255,0.8);
+    border-top:1px solid rgba(0,0,0,0.3);
+    
+    
+}
+nav ul li.active a{background-color:  rgb(0,0,0,0.2); color:#fff;}
+
+nav ul li a:hover{
+    background-color:#FFCD00 ;
+    color:#1C9CF6 ;
+    
+    
+}
+
+nav ul.hide{
+    display:none;
+}
+
+
+
+main {
+    margin:0 auto;}
+
+
+
+ 
+.preston-section {margin: 10px auto;
+    position: relative;}
+
+
+#title {margin: 0;
+        padding:10px;
+        color:#FFFFFA;
+        font-family: 'Merriweather Sans', sans-serif;}
+
+.summary {
+	position: absolute;
+	background: radial-gradient(#1C9CF6,#005DB3 );
+	border: 0.5px solid #1C9CF6;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #1C9CF6;
+    font-family:'Source Sans Pro', sans-serif; 
+    color:white;
+    width:100%;
+}
+
+#forecast-title{
+  margin-top: 9em;
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  color:white;
+  
+}
+
+
+.forecast {
+    margin-top:2em;
+    display: flex;
+   text-align: center;
+   justify-content: center;
+   font-family:'Source Sans Pro', sans-serif; 
+   color:#005DB3;
+   background: radial-gradient(#f0dc8e,#FFCD00 );
+   font-size:18px;
+   margin: 10px auto;
+   
+    
+}
+ 
+#preston-image{
+    width: 100%;
+    padding:5px;
+}
+
+
+
+.forecast-day img {
+padding: 10px;
+width: 100%;
+
+}
+
+
+.article-section{
+    margin: 10px auto;
+    position:static;
+	background: radial-gradient(#1C9CF6,#005DB3 );
+    color:#FFFFFA;
+    font-family:'Source Sans Pro', sans-serif; 
+    margin-top:2em;
+    width:100%;
+}
+
+.article-section  p, h1{
+padding:10px;
+}
+
+#article-image{
+    padding:8px;
+    width: 100%;
+  
+}
+
+
+#map-image{
+  width:100%;
+    
+  
+}
+#contact-title{
+    font-family: 'Merriweather Sans', sans-serif;
+    color:#FFFFFA;
+    
+      
+    
+}
+
+  
+
+.contact {
+
+    margin: 10px auto;
+    position:static;
+    color:#FFFFFA;
+    font-family:'Source Sans Pro', sans-serif; 
+    margin-top:2em;
+    width:100%;
+
+}
+
+.contact p{
+    margin-left:0.5em;
+   
+}
+
+
+
+.contact div {
+    display: flex;
+    align-items: center;
+}
+
+.media{
+    padding: 5px 5px;
+    margin-left: -0.2em;
+}
+#byuLink{
+    color:#FFFFFA;
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+#friday-banner{
+    display:none;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+    color:#FFFFFA;
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 20px;
+   height:50px;
+   text-align: center;
+    background-color: #FFCD00;
+    color: #1C9CF6;
+}
+  footer  {
+    background-color: #005DB3 ;
+    text-align: center;  
+    color: white;
+   font-size: 20px;
+   border-radius:20px;
+   border:2px  solid;
+   max-width:1200px;
+   min-width:300px;
+   margin-bottom:-4em;
+   margin: 0  auto;
+   margin-top: 2em;
+   font-family: 'Merriweather Sans', sans-serif;
+    }
+
+
+.clearfix:after {
+     content: "";
+    display: table;
+     clear: both;
+ }
+
+
+
+
+
+
+
