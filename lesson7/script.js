@@ -2,18 +2,18 @@
 const imagesToLoad = document.querySelectorAll('img[data-src]');
 
 const imgOptions ={
-    threshold: 1,
-    rootMargin: "0px 0px 50px 0px"
+    threshold: 0,
+    rootMargin: "0px 0px 150px 0px"
 };
 
-const loadImages = (image) => {
+const loadImages = (image ) => {
   image.setAttribute('src', image.getAttribute('data-src'));
   image.onload = () => {
     image.removeAttribute('data-src');
   };
 };
 if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver((items) => {
+  const observer = new IntersectionObserver((items, observer) => {
     items.forEach((item) => {
       if (item.isIntersecting) {
         loadImages(item.target);
@@ -53,23 +53,23 @@ if (weekDay == 5) {
 
 //Wind Chill
 
-  let tempF = parseFloat(document.getElementById ("temperature").innerHTML);
-  let speed = parseFloat(document.getElementById ("windSpeed").innerHTML);
-  let windchill= windChill(tempF, speed);
-  
-  function windChill(tempF, speed){
-    let calculation= 35.74 +( 0.6215 * tempF) - (35.75 * Math.pow ( speed, 0.16)) + (0.4275 * tempF *  Math.pow (speed,0.16));
-    return calculation.toFixed(2);
-  }
-  let finalResult="";
-  if ((tempF <=50) && (speed >3)){
-  finalResult= windchill +"°F";
-  }
-  
-  else {
-    finalResult= "N/A";
-  }
-  
-  document.getElementById ("windChillOutput").innerHTML= finalResult ;
-  console.log (finalResult);
-  console.log (windchill);
+let tempF = parseFloat(document.getElementById ("temperature").innerHTML);
+let speed = parseFloat(document.getElementById ("windSpeed").innerHTML);
+let windchill= windChill(tempF, speed);
+
+function windChill(tempF, speed){
+  let calculation= 35.74 +( 0.6215 * tempF) - (35.75 * Math.pow ( speed, 0.16)) + (0.4275 * tempF *  Math.pow (speed,0.16));
+  return calculation.toFixed(2);
+}
+let finalResult="";
+if ((tempF <=50) && (speed >3)){
+finalResult= windchill +"°F";
+}
+
+else {
+  finalResult= "N/A";
+}
+
+document.getElementById ("windChillOutput").innerHTML= finalResult ;
+console.log (finalResult);
+console.log (windchill);

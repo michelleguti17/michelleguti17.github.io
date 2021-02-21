@@ -268,8 +268,34 @@ padding:10px;
      clear: both;
  }
 
+ .preston-gallery {margin: 1rem auto;
+    display:grid;
+     grid-template-columns: 1fr; 
+     grid-gap: 20px;
+     max-width: 560px;}
 
 
 
+picture img { width: 100%; height: auto; margin: 0 auto; }
 
- 
+     figcaption{
+       font-family: 'Merriweather Sans', sans-serif;
+       font-size:smaller;
+       color: #FFFFFA;
+       padding-left: 10px;
+     
+     }
+     picture img[data-src] {
+        filter: blur(0.2em);
+       
+      }
+      
+     picture img {
+        filter: blur(0em);
+        transition: filter 0.1s;
+        padding: 10px;
+        
+      }
+    
+    
+    

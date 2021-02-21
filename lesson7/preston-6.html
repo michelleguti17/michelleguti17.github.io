@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How is the weather today</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="CSS/small.css"/>
+    <link rel="stylesheet" href="CSS/medium.css"/>
+    <link rel="stylesheet" href="CSS/large.css"/>
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+</head>
+<body>
+   
+    <header class="clearfix"> 
+        
+        <img id=logo src="images/Weather.png" alt="logo" srcset="images/Weather.png 1x" >
+         
+
+        <section class="headings">
+            <h1 id="site-title">How is the weather today</h1>
+            <div class="motto">The precise forecast</div>
+        </section>
+    </header>
+    <section id="friday-banner">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </section>
+        <nav>
+            <button onclick="toggleMenu()">&#9776 Menu</button>
+            <ul id="primaryNav" class="hide">
+
+            <li><a href="home.html">Home</a></li>
+            <li class="active"><a href="preston-6.html">Preston</a></li>
+            <li ><a href="sodas-prings.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="storm-center.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <h1 id="title">Preston Idaho</h1>
+        <div class="preston-section">
+            <picture class="preston-img">
+                    <source srcset="images/image640.jpg" media= "(min-width: 500px) and (max-width: 639px)">
+                    <source srcset="images/image640.jpg" media= "(min-width: 640px) and (max-width:799px)" >
+                    <source  srcset="images/image800.jpg" media= "(min-width:800px)" >
+            <img id="preston-image" src="images/image 507.jpg"  alt="idaho-landscape">
+           
+                            </picture>
+        <section class="summary">
+            <h2>Weahter Summary</h2>
+            <p>Currently : Snowing</p>
+            <p>High: <span id="temperature">32</span></p>
+            <p>Wind Chill: <span id="windChillOutput"></span> </p>
+            <p>Wind Speed:  <span id="windSpeed">3</span>mph</p>
+        </section>
+        </div>
+
+        <h1 id="forecast-title">Five Day Forecast</h1>
+        <section class="forecast">
+           
+            <div class="forecast-day">
+                <p id="first-day">Thursday</p>
+                <img src="images/snowW.png" alt="snow icon">
+                <p>32°F</p>
+            </div>
+            <div class="forecast-day">
+                <p id="second-day">Friday</p>
+                <img src="images/snowW.png" alt="snoe icon">
+                <p>33°F</p>
+            </div>
+            <div class="forecast-day">
+                <p id="third-day">Saturday</p>
+                <img src="images/cloudyW.png" alt="fog icon">
+                <p>35°F</p>
+            </div>     
+            <div class="forecast-day">
+                <p id="four-day">Sunday</p>
+                <img src="images/cloudyW.png"  alt="cloudy icon">
+                <p>32°F</p>
+            </div>
+            <div class="forecast-day">
+                <p id="five-day">Monday</p>
+                <img src="images/rainW.png" alt="partly cloudy day icon">
+                <p>31°F</p>
+            </div>
+    </section>
+    <section class="article-section">
+            <h1 id="article-title ">Article Title</h1>    
+            <img id="article-image" src="images/article pic.png" alt="kids under the rain">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt dolores facere magni ipsa eius, obcaecati quasi at velit deleniti sequi hic culpa dolorum non neque rerum sint quae nobis!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad facere maxime dolores molestias molestiae obcaecati nesciunt eligendi doloribus, ab fugiat voluptas sint praesentium veniam cum adipisci placeat fugit perferendis vero?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque quos explicabo ipsum nesciunt tempore exercitationem consectetur nostrum, consequuntur obcaecati nisi magni voluptatum pariatur dolores, a doloribus excepturi inventore laudantium.</p>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi beatae sed autem, architecto non blanditiis! Iure sed, aliquid tempore assumenda culpa incidunt animi earum saepe, reprehenderit, nam nobis provident?</p>
+            
+   
+    </section>
+    <section class="contact-section">
+        <h1 id="contact-title">Contact information</h1>
+        <div>
+        <img id="map-image" src="images/Preston mapa.png" alt="preston map">
+        </div>
+        <div class="contact">
+            
+            <div>
+            <img class="contact-icons" src="images/location.png" alt="location-icon">
+            <p >49 N State St Ste 102, Preston, ID</p> 
+            </div>
+            <div>
+            <img class="contact-icons" src="images/telephone.png" alt="telephone-icon">
+            <p>000-111-222</p>
+            </div>
+            <div>
+            <img class="contact-icons"src="images/email.png" alt="email-icon" >
+            <p> howishtheweathertoday@info.com</p>
+        </div>
+        </div>
+        <div class= "social-media">
+    
+                <a href="https://www.facebook.com/" target="_blank">
+                <img class="media" src= "images/facebook icon.png" alt="Facebook Icon">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                <img class="media" src= "images/instagram.png" alt="Instagram Icon">
+                </a>
+            </div>
+          
+                </div> 
+      
+         
+    </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="date"></span> | Preston Weather Site | Idaho  </p>  
+           
+         </footer>
+            <script src="JS/script.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({ google: { families: ['Merriweather Sans, Source Sans Pro ']}});
+            </script>
+      
+    
+</body>
+</html>
