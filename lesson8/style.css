@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    font-family: 'Ubuntu', sans-serif;
+}
+  th, td {
+    padding: 5px;
+    text-align: center;    
+  }
+
+  thead{
+      background-color:#7fb9c2;
+      font-size:24px;
+      color:black;
+  }
+
+
+.title {
+  background-color:  #628ca6;
+  color:white;
+}
+
+thead th{
+  background-color: #7fb9c2;
+}
+
+tr:nth-child(odd){
+background-color: #e7ffed;
+}
+
+tr:nth-child(even){
+    background-color:#e7f0ed;
+    }
+      
+tfoot td{
+    background-color:#7fb9c2;
+    font-size:12px;
+    font-style: bold;
+}
+
+ tr:nth-child(6) td:nth-child(1){
+font-style:italic;
+    }
+
+
+
