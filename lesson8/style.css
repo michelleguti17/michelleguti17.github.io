@@ -1,11 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
+table{
+  box-shadow: 5px 5px 8px #628ca6;
+}
+
 table, th, td {
-    border: 1px solid gray;
+    border: 1px solid #cdd3d1;
     border-collapse: collapse;
     font-family: 'Ubuntu', sans-serif;
-    box-shadow: 5px 5px 8px #628ca6;
+   
 }
   th, td {
     padding: 5px;
