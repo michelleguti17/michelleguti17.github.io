@@ -5,6 +5,7 @@ table, th, td {
     border: 1px solid gray;
     border-collapse: collapse;
     font-family: 'Ubuntu', sans-serif;
+    box-shadow: 5px 5px 8px #628ca6;
 }
   th, td {
     padding: 5px;
