@@ -43,19 +43,19 @@
             <fieldset>
             <div class="form-input">
                 <h2 class="contact-title">Contact Information</h2>
-                <label for="name">Full Name*:<input class="form-data" type="text" id="name" name="name" minlength="5" maxlength="50" size="20" required="" pattern="[A-Z][A-Za-z' -]+"></label> </br>
+                <label for="name">Full Name*:<input class="form-data" type="text" id="name" name="name" minlength="5" maxlength="50" size="30" required="" pattern="[A-Z][A-Za-z' -]+"></label> </br>
                 <label for="email">Email:<input class="form-data" type="email" id="email" name="email" placeholder="address@domain.com" size="30"></label></br>
-                <label for="phone">Phone*:<input   class="form-data" type="tel" id="telephone" name="tel" required="" minlength="10" size="25"></label></br>
+                <label for="phone">Phone*:<input   class="form-data" type="tel" id="telephone" name="tel" required="" minlength="10" size="30"></label></br>
                 <label for="zip">ZIP*:<input  class="form-data" type="number" id="zip" name="zip" required="" size="5"></label></br>
             </div>
          
 
             
          
-            <div class="form-input">
+            <div class="form-input" >
                 <h2>Storm Report</h2>
-                <label for="date">Storm Date:<input type="date" id="date" name="storm-date" ></label>
-                <input list="storm-type" id="storm-list" name="type">
+                <label for="date">Storm Date:<input type="date" id="date" name="storm-date"></label></br>
+                 <label for= "storm">Storm Type:<input list="storm-type" id="storm-list" name="type"></label>
                 <datalist id="storm-type">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
@@ -64,9 +64,9 @@
                     <option value="Tornado"></option>
                     <option value="Other"></option>
                 </datalist>
-            </div>
+           
        
-            <div class="form-input">
+         
                 <label for="region">Region:</label>
                 <select id="region">
                     <option selected="">Select Region...</option>
@@ -74,7 +74,7 @@
                     <option value="sodasprings">Soda Springs</option>
                     <option value="fishhaven">Fish Haven</option>
                 </select>
-            </div>
+           
             <div id="rating-list">
                 <label  for="rating">Severity from 1 to 10 &nbsp;
                     <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
@@ -93,7 +93,7 @@
                     <option value="10">
                 </datalist>
             </div>
-
+        </div>
 
          
             <div class="form-input">

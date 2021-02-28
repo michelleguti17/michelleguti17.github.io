@@ -91,15 +91,6 @@ header img {
 
 
 
-#map-image{
-    padding:15px;
-    float:left;
-   margin-top: -2em;
-    width:400px;
-    height:340px;
-    
-}
-
 footer{
     margin-top: 4em;
 }
@@ -117,6 +108,7 @@ textarea{
 }
 .title-page{
   margin-left:12.6em;
+  margin-top: 2em;
   padding:5px;
 }
 }
