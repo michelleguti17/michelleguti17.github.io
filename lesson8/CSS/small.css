@@ -149,8 +149,8 @@ input:hover{
 
 
 
-#region, #rating-list , #storm-list{
-    margin-top: 1em;
+#region, #rating-list {
+    margin-top: 1.5em;
 }
 
 
@@ -182,6 +182,8 @@ input:hover{
     color:#FFFFFA;
     background-color: #FFCD00;
     margin: auto 0;
+    padding:5px;
+    justify-content: center;
     
 }
 
@@ -189,7 +191,7 @@ input:hover{
     background-color: #FFFFFA;
     color: #005DB3;
 }
-
+ 
 #thank-you{
     background-color: #FFFFFA;
     border: 5px solid;
