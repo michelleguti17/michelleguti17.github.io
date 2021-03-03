@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Slab:wght@500&display=swap');
+
+main div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+div.cards {
+    padding: 10px;
+    background-color: #d5d5dd;
+    box-shadow: 0 0 15px 5px gray;
+}
+
+div.cards section {
+    border: 2px solid #3427a7;
+    background-color: #cac7e4;
+    max-width: 100%;
+    text-align: center;
+    padding:30px;
+}
+
+div.cards section img {
+    width: 200px;
+    height: 250px;
+    box-shadow: 0 0 5px 5px gray;
+}
+
+
+
+h1,h2 {
+    color: #3427a7;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 10px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+    margin: 0;
+}
+
+section p:nth-child(3) {
+    margin-bottom: 15px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: #3427a7;
+}
+@media only screen and (min-width: 37.2rem) {
+    main div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    main div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+    }
+}
