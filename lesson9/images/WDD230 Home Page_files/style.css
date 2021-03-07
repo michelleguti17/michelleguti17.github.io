@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+
+
+body {
+
+background-color: #FFE9F3;
+
+font-family: "Poppins", "sans-serif", "Source Sans Pro", "sans-serif";
+ 
+
+}
+
+main {
+   
+max-width: 1900px;
+margin: 0 auto;
+height: 900px;
+background-color:#FFE9F3;
+
+
+}
+
+
+h2{
+   
+    color:#c9417e ;
+    font-family:"Poppins", "sans-serif", "Source Sans Pro", "sans-serif";  
+   margin-left:10em;
+     
+ } 
+
+
+ img {
+
+    float: right;
+    width: 300px;
+    margin-right: 12em;
+    margin-top:-8em;
+
+}
+
+
+ header {
+
+ background-color: #c9417e;
+ text-align: center;  
+ color: white;
+font-size: 20px;
+border-radius: 40px;
+width:1200px;
+margin-left: 10em;
+height:80px;
+
+ }
+
+.list-lessons {
+  margin-left:14em; 
+  font-size: 20px;
+  margin-top: 1em;
+  
+    color:#c9417e ;
+}
+
+ footer  {
+ background-color: #c9417e;
+ text-align: center;  
+ color: white;
+font-size: 20px;
+border-radius:40px;
+margin-top:-22em;
+border:2px  solid;
+width:1200px;
+margin-left: 10em;
+ }
