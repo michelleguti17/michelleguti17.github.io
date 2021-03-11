@@ -113,6 +113,7 @@ main {
 
 
 #title {margin: 0;
+    margin-top: 1em;
         padding:10px;
         color:#FFFFFA;
         font-family: 'Merriweather Sans', sans-serif;}
