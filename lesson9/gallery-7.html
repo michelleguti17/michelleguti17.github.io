@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How is the weather today</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="CSS/small.css"/>
+    <link rel="stylesheet" href="CSS/medium.css"/>
+    <link rel="stylesheet" href="CSS/large.css"/>
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+</head>
+<body>
+   
+    <header class="clearfix"> 
+        
+        <img id=logo src="data/img/Weather.png" >
+         
+
+        <section class="headings">
+            <h1 id="site-title">How is the weather today</h1>
+            <div class="motto">The precise forecast</div>
+        </section>
+    </header>
+    <section id="friday-banner">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </section>
+        <nav>
+            <button onclick="toggleMenu()">&#9776 Menu</button>
+            <ul id="primaryNav" class="hide">
+
+            <li><a href="home.html">Home</a></li>
+            <li ><a href="preston-6.html">Preston</a></li>
+            <li ><a href="sodas-prings.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="storm-center.html">Storm Center</a></li>
+            <li class="active"><a href="gallery-7.html">Gallery</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <h1 id="title">Weather Gallery</h1>
+        <div class="preston-gallery">
+            <picture>
+               
+                <img  class="weather-img" id="sunny-img" src="data/img/placeholder.jpg" data-src="data/img/sunny.jpg" alt="sunny weather">
+                <figcaption>Sunny in Preston </figcaption>
+            </picture>
+            <picture>
+                <img class="weather-img" id="cloudy-img" src="data/img/placeholder.jpg" data-src="data/img/cloudy.jpg" alt="cloudy weather">
+                <figcaption>Cloudy in Preston</figcaption>
+            </picture>
+            <picture>
+                <img class="weather-img" id="snow-img" src="data/img/placeholder.jpg" data-src="data/img/snow.jpg" alt=" snow weather">
+                <figcaption>Snow in Preston</figcaption>
+            </picture>
+            <picture>
+                <img class="weather-img" id="rainbow-img" src="data/img/placeholder.jpg" data-src="data/img/rainbow.jpg" alt="rainbow weather">
+                <figcaption>Rainbow over Preston</figcaption>
+            </picture>
+            <picture>
+                <img  class="weather-img" id="sunrise-img" src="data/img/placeholder.jpg" data-src="data/img/sunrise.jpg" alt="sunrise weather">
+                <figcaption>Sunrise in Preston</figcaption>
+            </picture>
+            <picture>
+                <img  class="weather-img" id="rain-img" src="data/img/placeholder.jpg" data-src="data/img/rain.jpg" alt="rain weather">
+                <figcaption>Rain Preston</figcaption>
+            </picture>
+            
+            
+     
+   </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="date"></span> | Preston Weather Site | Idaho  </p>  
+           
+         </footer>
+         <script src="script.js" defer></script>
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({ google: { families: ['Merriweather Sans, Source Sans Pro ']}});
+            </script>
+      
+    
+</body>
+</html>
