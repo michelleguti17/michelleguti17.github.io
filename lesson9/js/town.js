@@ -36,7 +36,7 @@ fetch(requestURL)
       townName.append(info);
       info.append(h2);
       info.append(motto);
-       info.append(year);
+      info.append(year);
       info.append(population);
       info.append(rainFall);
       townName.append(images);
