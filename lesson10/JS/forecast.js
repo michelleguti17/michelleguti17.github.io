@@ -42,6 +42,7 @@ fetch( apiURLForecast)
     document.getElementById('imagesrc').innerHTML = imagesrc; 
    document.getElementById('icon').setAttribute('src', imagesrc);  
    document.getElementById('icon').setAttribute('alt', description);
+  
     });
     
  
