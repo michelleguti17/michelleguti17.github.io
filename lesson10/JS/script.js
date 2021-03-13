@@ -1,4 +1,3 @@
-
 // Lazy Loading
 const imagesToLoad = document.querySelectorAll('img[data-src]');
 
@@ -74,10 +73,3 @@ else {
 document.getElementById ("windChillOutput").innerHTML= finalResult ;
 console.log (finalResult);
 console.log (windchill);
-
-//rating selection
-
-function adjustRating(rating) {
-  document.getElementById("ratingvalue").innerHTML = rating;
-}
-
