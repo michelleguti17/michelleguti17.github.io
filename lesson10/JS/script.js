@@ -80,8 +80,8 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
 
-    
-    document.getElementById("current-temp").innerHTML =  Math.round(jsObject.main.temp);
+    let current = jsObject.main.temp;
+    document.getElementById("current-temp").innerHTML =  Math.round(current);
     document.getElementById("high-temp").innerHTML = Math.round(jsObject.main.temp_max);
     document.getElementById("windSpeed").innerHTML = jsObject.wind.speed;
     document.getElementById("humidity").innerHTML = jsObject.main.humidity;
