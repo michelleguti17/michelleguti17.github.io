@@ -114,8 +114,17 @@ main {
 .preston-section {margin: 10px auto;
     position: relative;}
 
-
+    
 #title {margin: 0;
+    margin-top: 1em;
+   
+    padding:10px;
+    color:#FFFFFA;
+    font-family: 'Merriweather Sans', sans-serif;}
+
+#title-gallery {margin: 0;
+        margin-top: 1em;
+        margin-left: 1em;
         padding:10px;
         color:#FFFFFA;
         font-family: 'Merriweather Sans', sans-serif;}
