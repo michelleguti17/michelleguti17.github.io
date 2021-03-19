@@ -51,6 +51,11 @@ if (weekDay == 5) {
     element.style.display = "block";
 }
 
+//Rating Form selection
+
+function adjustRating(rating) {
+  document.getElementById("ratingvalue").innerHTML = rating;
+}
 
 //Town JS
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
@@ -104,7 +109,28 @@ fetch(requestURL)
 
 //Wind Chill
 
-let tempF = parseFloat(document.getElementById ("high-temp").innerHTML);
+
+
+
+
+// Weather Summary PRESTON
+function currentWeather(id) {
+  const apiURL = "https://api.openweathermap.org/data/2.5/weather?id'+id+'&units=imperial&APPID=322f9b768407057c9f7ae572f8cd7a97";
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    
+   
+
+    let current = jsObject.main.temp;
+    document.getElementById("current-temp").innerHTML =  Math.round(current);
+    document.getElementById("high-temp").innerHTML = Math.round(jsObject.main.temp_max);
+    document.getElementById("windSpeed").innerHTML = jsObject.wind.speed;
+    document.getElementById("humidity").innerHTML = jsObject.main.humidity;
+    document.getElementById("current-2").innerHTML =  jsObject.weather[0].main;
+   
+    
+    let tempF = parseFloat(document.getElementById ("high-temp").innerHTML);
 let speed = parseFloat(document.getElementById ("windSpeed").innerHTML);
 let windchill= windChill(tempF, speed);
 
@@ -124,29 +150,14 @@ else {
 document.getElementById ("windChillOutput").innerHTML= finalResult ;
 console.log (finalResult);
 console.log (windchill);
+ 
+   
 
-//Rating Form selection
-
-function adjustRating(rating) {
-  document.getElementById("ratingvalue").innerHTML = rating;
-}
-
-// Weather Summary
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=322f9b768407057c9f7ae572f8cd7a97";
-fetch(apiURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
-
-    let current = jsObject.main.temp;
-    document.getElementById("current-temp").innerHTML =  Math.round(current);
-    document.getElementById("high-temp").innerHTML = Math.round(jsObject.main.temp_max);
-    document.getElementById("windSpeed").innerHTML = jsObject.wind.speed;
-    document.getElementById("humidity").innerHTML = jsObject.main.humidity;
-    document.getElementById("current-2").innerHTML =  jsObject.weather[0].main;
-  
   });
+}
+// 5 day forecast PRESTON
 
-//Forecast
+
 
 const requestURl = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=322f9b768407057c9f7ae572f8cd7a97";
 
@@ -173,3 +184,27 @@ fetch(requestURl)
     
  
 });
+
+
+function getTownEvents(town) {
+  const eventsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(eventsURL)
+.then(function (response) {
+  return response.json();
+})
+.then(function (jsonObject) {
+  const towns = jsonObject['towns'];
+  for (let i = 0; i < towns.length; i++ ) {
+      if (towns[i].name == town) {
+          let events = towns[i].events;
+          for (let i=0; i < events.length; i++) {
+              let event = document.createElement('p');
+              event.innerHTML = events[i];
+              document.querySelector('.events').appendChild(event);
+              console.log(towns);
+          }
+      }
+  }
+});
+}
