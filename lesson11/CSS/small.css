@@ -111,7 +111,7 @@ main {
 
 /*PRESTON PAGE*/
  
-.preston-section {margin: 10px auto;
+.pages-section {margin: 10px auto;
     position: relative;}
 
     
@@ -140,7 +140,9 @@ main {
     width:100%;
 }
 
- 
+
+
+
 #preston-image{
     width: 100%;
     padding:5px;
@@ -156,7 +158,12 @@ main {
 }
 
 
-
+.events {
+    border: solid thin black;
+    font-size: 1.1em;
+    margin: 20px 0;
+    padding:10px 20px 20px 20px;
+  }
 
 
 
