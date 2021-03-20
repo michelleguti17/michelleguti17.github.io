@@ -87,8 +87,8 @@
     
   float:right;
   width:400px;
-  height:300px;
-  margin-top: 6.2em;
+  height:250px;
+  margin-top: 1em;
 }
 
    
@@ -172,6 +172,8 @@ div.places{
   
   div.town img{
     display: block;
+    margin: 0 auto;
+    
   }
   
   div.town{

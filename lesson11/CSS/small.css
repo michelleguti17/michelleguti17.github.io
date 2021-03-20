@@ -352,10 +352,10 @@ border-color: #0963b8;
             color: #FFFFFA;
         }
         
-.links a:hover{
+.links:hover{
             
 background-color: #005DB3;
-color:#48b3ff;
+color:#FFFFFA;
         }
 .clearfix:after {
      content: "";
@@ -530,7 +530,8 @@ text-align: center;
 .places img {max-width: 100%; 
 padding:10px;
 height: 200px; 
-margin:0 auto;}
+margin:0 auto;
+margin-left:3.5em;}
 
 h3{
 font-style: italic;
@@ -541,7 +542,10 @@ font-size: 16px;
 
 }
 
-
-
+.town{
+    
+border: 4px solid;
+border-color: #0963b8;
+}
 
 
