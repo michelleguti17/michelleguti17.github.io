@@ -14,16 +14,78 @@
 		font-size: larger;
 		margin-left: 17px;
 	}
-
-  .co
-	#article-image{
+	
+	
+   .contact-group {
+	color: #fffffa;
+	padding: 5px;
+	padding-left: 20px;
+	font-family:'Source Sans Pro', sans-serif; 
+   }
+   .current-weather {
+	position: absolute;
+    border: 7px  solid;
+    border-color:#1C9CF6 ;
+     top: 20px;
+     left: 20px;
+     color:#043869;
+     opacity: .92;
+     font-size: 16px;
+    
+     
+}
+#article-image{
         
-		float:right;
-		max-width:100%;
+	float:right;
+	max-width:100%;
+}
+
+  
+#instagram{
+	margin-left: -0.3em;
+}
+.contact-section{
+	height: 400px;
+	max-height: 100%;
+}
+.contact-group img{
+	margin-left: 5em;
+}
+	#map-image{
+		padding:15px;
+		float:left;
+		margin-left: 2em;
+	   margin-top: -1em;
+	   width:300px;
+	   height:300px;
+		max-width: 100%;
+		
 	}
+
 	footer{
-		margin-top: 4em;
+		margin-top: -0.7em;
+	  }
+
+	  #fish-article-image{
+    
+		float:right;
+		width:400px;
+		height:300px;
+		margin-top: 6.2em;
+	  }
+	  
+	  .article-image{
+    
+		float:right;
+		width:300px;
 	}
+	#soda-article-image{
+    
+		float:right;
+		width:250px;
+		height:300px;
+	  }
+	  
  /*GALLERY*/
 	.preston-gallery {margin: 1rem auto;
 		display:grid;
@@ -31,20 +93,8 @@
 		 grid-gap: 20px;
 		 max-width: 960px;}
 
-		 #article-image{
-    
-			float:right;
-			width:300px;
-		}
 		
-		#map-image{
-			padding:15px;
-			float:left;
-		   margin-top: -2em;
-			width: 350px;
-			height:300px;
-			
-		}
+		
 
 /*FORM AND THANK YOU PAGE*/
 

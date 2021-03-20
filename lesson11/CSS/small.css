@@ -4,20 +4,19 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Source+Sans+Pro:wght@600&display=swap');
+
 
 
 body{
-    background-color  :#1C9CF6;
+    margin: 0 auto;
+    background-color: #a3daff;
 }
 header  {
-    background-color: #005DB3 ;
+    background-image: linear-gradient( #005DB3, #1C9CF6 , #48b3ff);
     padding: 5px 0;
 	display: flex;
     color: #FFFFFA;
-   border-radius:20px;
-   border:2px  solid;
-   margin:auto;
+   
    align-content:center;
 	justify-content:center;
 
@@ -66,8 +65,8 @@ nav button{
 
 nav{
     
-    margin-top: 2em;
-   background-color: #005DB3;
+
+   background-color:#1C9CF6;
    font-family: 'Merriweather Sans', sans-serif;
    font-size: 18px;
 }
@@ -82,16 +81,16 @@ nav ul li a{
     display:block;
     padding: .8rem 2%;
     text-decoration: none;
-    color: rgba(255, 255, 255,0.8);
+    color: #FFFFFA;
     border-top:1px solid rgba(0,0,0,0.3);
     
     
 }
-nav ul li.active a{background-color:  rgb(0,0,0,0.2); color:#fff;}
+nav ul li.active a{background-color:  rgba(39, 36, 36, 0.2); color:#fff;}
 
 nav ul li a:hover{
-    background-color:#FFCD00 ;
-    color:#1C9CF6 ;
+    background-color: #005DB3 ;
+    color:#FFFFFA ;
     
     
 }
@@ -103,24 +102,29 @@ nav ul.hide{
 
 
 main {
-    margin:0 auto;}
+    margin:0 auto;
+
+}
 
 #idaho-home{
     width:100%;
 }    
 
-/*PRESTON PAGE*/
+/*PRESTON - SODA SPRINGS - FISH HAVEN BASIC PAGES*/
  
 .pages-section {margin: 10px auto;
-    position: relative;}
+    position: relative;
+    background-image: linear-gradient( #1499f8,#1C9CF6 , #48b3ff);
+    }
 
     
 #title {margin: 0;
-    margin-top: 1em;
-   
-    padding:10px;
-    color:#FFFFFA;
-    font-family: 'Merriweather Sans', sans-serif;}
+    margin-top: 0.7em;
+    padding:20px;
+    font-size: 48px;
+    color: #005DB3;
+    font-family: 'Merriweather Sans', sans-serif;
+text-align: center;}
 
 #title-gallery {margin: 0;
         margin-top: 1em;
@@ -131,94 +135,152 @@ main {
 
 .current-weather {
 	position: absolute;
-	background: radial-gradient(#1C9CF6,#005DB3 );
-	border: 0.5px solid #1C9CF6;
-	padding: 1.5rem;
-	box-shadow: 0 0 30px #1C9CF6;
-    font-family:'Source Sans Pro', sans-serif; 
-    color:white;
-    width:100%;
+    border: 3px  solid;
+    border-color:#1C9CF6 ;
+     top: 20px;
+     left: 10px;
+     color:#043869;
+     opacity: .92;
+     font-size: 10px;
+     background-color:#fcfbf6;
+     max-width:100%;
+     padding: 5px;
+     font-family:'Source Sans Pro', sans-serif; 
+     max-height: 100%;
+  
+     
+}
+
+.current-weather p {
+    margin-top: -0.5em;
+    margin-left: 0.5em;
+ 
+}
+.current-weather h2 {
+    margin-top: 0.3em;
+    margin-left: 0.em;
+ 
 }
 
 
 
 
-#preston-image{
+#preston-image , #idaho-home{
     width: 100%;
-    padding:5px;
+    padding:10px;
 }
 
 
-#forecast-title{
-  margin-top: 9em;
+#forecast-title {
+  margin-top: 1em;
   text-align: center;
   font-family: 'Merriweather Sans', sans-serif;
-  color:white;
+  color: #043869;
   
 }
 
+.forecast{
+    display: flex;
+    justify-content: space-around;
+     background-color: #48b3ff;
+    border: 4px solid;
+    border-color: #0963b8;
+    padding:10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2em;
+    font-family:'Source Sans Pro', sans-serif;
+    color:#FFFFFA;
+    width:900px;
+    max-width:100%;
+    }
+    
+    
+    
+    
+    .forecast-day img{
+       
+       margin-top: -10em;
+        margin: 0 auto;
+    }
+
+#events-title{
+    margin-top: 2em;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #043869;
+    
+  }
 
 .events {
-    border: solid thin black;
-    font-size: 1.1em;
-    margin: 20px 0;
-    padding:10px 20px 20px 20px;
+    
+
+ background-color: #48b3ff;
+border: 4px solid;
+border-color: #0963b8;
+padding:10px;
+margin: 0 auto;
+text-align: center;
+margin-top: 2em;
+font-family:'Source Sans Pro', sans-serif;
+color:#FFFFFA;
+width:400px;
+max-width:100%;
   }
 
 
 
-.forecast{
-display: flex;
-justify-content: space-around;
-font-family:'Source Sans Pro', sans-serif; 
-color:#005DB3;
-font-size:24px;
-border:8px double;
-border-color: #FFFFFA;
-
-background: radial-gradient(#f0dc8e,#FFCD00 );
-}
-
-
-
-
-.forecast-day img{
-   
- 
-    margin: 0 auto;
-}
 
 
 .article-section{
+    
     margin: 10px auto;
     position:static;
-	background: radial-gradient(#1C9CF6,#005DB3 );
     color:#FFFFFA;
     font-family:'Source Sans Pro', sans-serif; 
-    margin-top:2em;
+    margin-top:3em;
     width:100%;
-}
+    padding: 25px;
+    
+   
+   
 
-.article-section  p, h1{
+}
+.article{
 padding:10px;
+background-color: #48b3ff;
+border: 4px solid;
+border-color: #0963b8;
+
+}
+.article h1, .author{
+    color: #043869;
 }
 
-#article-image{
+.article-image{
     padding:8px;
     width: 100%;
+    height: 100%;
+    margin-top: 3em;
   
 }
-
-
+#soda-article-image{
+    width: 100%;
+    margin-top: 1em;
+}
 #map-image{
   width:100%;
-    
+  max-width: 400px;
+  margin-left: 2em;
+  
   
 }
 #contact-title{
+    margin-top: 2em;
+    text-align: center;
     font-family: 'Merriweather Sans', sans-serif;
-    color:#FFFFFA;
-    
+    color: #043869;
+ 
       
     
 }
@@ -226,7 +288,8 @@ padding:10px;
   
 
 .contact {
-
+    
+     height:210px;
     margin: 10px auto;
     position:static;
     color:#FFFFFA;
@@ -236,22 +299,24 @@ padding:10px;
 
 }
 
+
+
 .contact p{
     margin-left:0.5em;
    
 }
 
+#instagram{
+ padding-left: 10px;   
+}
 
 
-.contact div {
+.contact-group {
     display: flex;
     align-items: center;
+    margin-left: 2em;
 }
 
-.media{
-    padding: 5px 5px;
-    margin-left: -0.2em;
-}
 #byuLink{
     color:#FFFFFA;
     font-family:'Source Sans Pro', sans-serif;
@@ -271,21 +336,27 @@ padding:10px;
     color: #1C9CF6;
 }
   footer  {
-    background-color: #005DB3 ;
-    text-align: center;  
-    color: white;
-   font-size: 20px;
-   border-radius:20px;
-   border:2px  solid;
-   max-width:1200px;
-   min-width:300px;
-   margin-bottom:-4em;
-   margin: 0  auto;
-   margin-top: 2em;
-   font-family: 'Merriweather Sans', sans-serif;
+    background-image: linear-gradient( #005DB3, #1C9CF6 , #48b3ff);
+    padding: 5px 0;
+    margin: auto;
+    text-align: center;
+  
     }
-
-
+    footer p {
+        font-family: 'Merriweather Sans', sans-serif;
+        color:#FFFFFA;
+        
+        }
+.links{
+            font-family:'Source Sans Pro', sans-serif;
+            color: #FFFFFA;
+        }
+        
+.links a:hover{
+            
+background-color: #005DB3;
+color:#48b3ff;
+        }
 .clearfix:after {
      content: "";
     display: table;
@@ -309,7 +380,7 @@ picture img {
      figcaption{
        font-family: 'Merriweather Sans', sans-serif;
        font-size:16px;
-       color: #FFFFFA;
+       color: #005DB3;
        padding-left: 10px;
       
      }
@@ -330,13 +401,13 @@ picture img {
 
   .title-page{
     font-family: 'Merriweather Sans', sans-serif;
-    color:#FFFFFA;
+    color: #043869;
     
 }
 
 
   form{
-    background-color: #FFCD00;
+    background-color: #005DB3;
     padding:10px;
     font-family: 'Merriweather Sans', sans-serif;
     color:#FFFFFA;
@@ -345,7 +416,7 @@ picture img {
 }
 
 fieldset{
-    background-color: #005DB3 ;
+    background-color:#1C9CF6 ;
     
    
 }
@@ -402,7 +473,7 @@ input:hover{
     font-size: 18px;
     font-family:'Source Sans Pro', sans-serif;
     color:#FFFFFA;
-    background-color: #FFCD00;
+    background-color: #005DB3;
     margin: auto 0;
     padding:5px;
     justify-content: center;
@@ -417,7 +488,7 @@ input:hover{
 #thank-you{
     background-color: #FFFFFA;
     border: 5px solid;
-    border-color:#FFCD00;
+    border-color:#005DB3;
     padding:10px;
     margin: auto 0;
      text-align: center;
@@ -432,6 +503,7 @@ div.places{
     grid-template-columns: 1fr;
     grid-gap: 5px;
    margin: 0 auto;
+   padding:10px;
 }
 
 
@@ -448,35 +520,28 @@ text-align: center;
 }
 
 .places div{
- background-color:#005DB3;
- margin-top: 1em;
+    background-color: #48b3ff;
+  
+}
+.places h2 p {
+    color: #005DB3;
 }
 
 .places img {max-width: 100%; 
 padding:10px;
-height: auto; 
+height: 200px; 
 margin:0 auto;}
 
 h3{
 font-style: italic;
 font-family:'Source Sans Pro', sans-serif;
-color: #FFCD00;
+color: #005DB3;
 text-align: center;
-font-size: 18px;
+font-size: 16px;
 
 }
 
 
-#wlink{
-font-family:'Source Sans Pro', sans-serif;
-color: #FFCD00;
-}
-
-#wlink a:hover{
-
-background-color: #005DB3;
-color: #FFFFFA;
-}
 
 
 

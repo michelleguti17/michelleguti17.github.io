@@ -41,9 +41,9 @@
     </nav>
     <main>
         <h1 id="title">Home Page</h1>
-        <div class="preston-section">
+        <div class="pages-section">
            
-            <img id="idaho-home" src="images/idaho.jpg"  alt="idaho-landscape">
+            <img id="idaho-home" src="images/idaho.jpg"  alt="idaho moutains-landscape">
            
              
         
@@ -52,64 +52,63 @@
          
     </div>
        
-    
     <section class="article-section">
-            <h1 id="article-title ">Article Title</h1>    
-            <img id="article-image" src="images/article pic.png" alt="kids under the rain">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt dolores facere magni ipsa eius, obcaecati quasi at velit deleniti sequi hic culpa dolorum non neque rerum sint quae nobis!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad facere maxime dolores molestias molestiae obcaecati nesciunt eligendi doloribus, ab fugiat voluptas sint praesentium veniam cum adipisci placeat fugit perferendis vero?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque quos explicabo ipsum nesciunt tempore exercitationem consectetur nostrum, consequuntur obcaecati nisi magni voluptatum pariatur dolores, a doloribus excepturi inventore laudantium.</p>
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi beatae sed autem, architecto non blanditiis! Iure sed, aliquid tempore assumenda culpa incidunt animi earum saepe, reprehenderit, nam nobis provident?</p>
+        <div class="article">
+            <img class= "article-image" id="home-article-image" src="images/boise.jpg" alt="Boise City in idaho. Buildings in Boise Ihado.">
             
-   
-    </section>
-    <section class="contact-section">
-        <h1 id="contact-title">Contact information</h1>
-        <div>
-        <img id="map-image" src="images/Preston mapa.png" alt="preston map">
+            <h1 class="article-title ">The 5 Best Spring Adventure Destinations in Idaho</h1>  <p class="author">by The Outbound Collective</p> 
+            <p>ong, sunny days are just around the corner.
+
+                We love adventures in the snow, but winters in Idaho can be long and cold and we know you’re getting just as excited as we are for springtime. With the weather warming up and the days growing longer, now is the time to plan your trip to explore Idaho this spring. Gather your friends and family and get ready to make some memories at all of these beautiful locations.</br> </br>Read the whole article at <a class="links" href="https://www.theoutbound.com/theoutbound/the-5-best-spring-adventure-destinations-in-idaho">The Outbound Collective</a></p>
         </div>
-        <div class="contact">
-            
-            <div>
-            <img class="contact-icons" src="images/location.png" alt="location-icon">
-            <p >49 N State St Ste 102, Preston, ID</p> 
-            </div>
-            <div>
-            <img class="contact-icons" src="images/telephone.png" alt="telephone-icon">
-            <p>000-111-222</p>
-            </div>
-            <div>
-            <img class="contact-icons"src="images/email.png" alt="email-icon" >
-            <p> howishtheweathertoday@info.com</p>
-        </div>
-       
-       
-        <div class= "social-media">
-    
-                <a href="https://www.facebook.com/" target="_blank">
-                <img class="media" src= "images/facebook icon.png" alt="Facebook Icon">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                <img class="media" src= "images/instagram.png" alt="Instagram Icon">
-                </a>
-            </div>
-          
-                </div> 
-      
-         
-    </section>
-    </main>
-    <footer>
-        <p>&copy; <span id="date"></span> | Preston Weather Site | Idaho  </p>  
            
-         </footer>
-         
-            <script src="JS/script.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-            <script>
-                WebFont.load({ google: { families: ['Merriweather Sans, Source Sans Pro ']}});
-            </script>
-      
-    
-</body>
-</html>
+    </section>
+             <section class="contact-section">
+                <h1 id="contact-title">Contact information</h1>
+                <div>
+                <img id="map-image" src="images/Preston mapa.png" alt="preston map">
+                </div>
+                <div class="contact">
+                    
+                    <div class= "contact-group">
+                    <img class="contact-icons" src="images/location.png" alt="location-icon">
+                    <p >49 N State St Ste 102, Preston, ID</p> 
+                    </div>
+                    <div class= "contact-group">
+                    <img class="contact-icons" src="images/telephone.png" alt="telephone-icon">
+                    <p>000-111-222</p>
+                    </div>
+                    <div class= "contact-group">
+                    <img class="contact-icons"src="images/email.png" alt="email-icon" >
+                    <p> howishtheweathertoday@info.com</p>
+                    </div>
+                    <div class= "contact-group">
+                        <a href="https://www.facebook.com/" >
+                        <img id="facebook" src= "images/facebook icon.png" alt="Facebook Icon"></a>
+                        <a href="https://www.instagram.com/">
+                        <img id="instagram" src= "images/instagram.png" alt="Instagram Icon">
+                        </a>
+                    </div>
+                        </div> 
+                   
+            
+                 
+            </section>
+        </div>
+            </main>
+            <footer>
+                <p class="footer-text">&copy; <span id="date"></span> |<a class="links" href="index.html">How is the weather today</a> | Ecuador | Michelle Gutiérrez </p>  
+                 </footer>
+                    <script src="JS/script.js"> </script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+                    <script>
+                        WebFont.load({ google: { families: ['Merriweather Sans, Source Sans Pro ']}});
+                        currentWeather('5604473');
+                        forecast('5604473');
+                        getTownEvents("Preston");
+                    </script>
+        
+              
+            
+        </body>
+        </html

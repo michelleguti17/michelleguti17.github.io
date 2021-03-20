@@ -133,7 +133,7 @@ console.log (windchill);
 
 
 // Weather Summary PRESTON
- function currentWeather(city) {
+ function currentW(city) {
   const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + city + "&units=imperial&appid=322f9b768407057c9f7ae572f8cd7a97";
   fetch(apiURL)
   .then((response) => response.json())
@@ -182,7 +182,7 @@ fetch(requestURl)
  
 });
 }
-function getTownEvents(town) {
+function getEvents(town) {
   const eventsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
   
   fetch(eventsURL)

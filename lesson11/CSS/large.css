@@ -1,13 +1,6 @@
 @media only screen and (min-width: 64rem) {
-  header {
-    display: flex;
-    
-  }
-  header section {
-    float:left;
-    margin: 0;
-    padding: 0;
-  }
+  
+
   
   #logo {
     width:128px;
@@ -51,59 +44,82 @@
       }
 
  
-#article-image{
+
+      .current-weather {
+        position: absolute;
+          border: 7px  solid;
+          border-color:#1C9CF6 ;
+           top: 30px;
+           left: 30px;
+           color:#043869;
+           opacity: .92;
+           font-size: 20px;
+           width:300px;
+           
+      }
+        
+      .current-weather h2 {
+        margin-left: 0.2em;
+     
+    }
+
+  
+.article-image{
     
      float:right;
      width:300px;
  }
+ #soda-article-image{
+    
+  float:right;
+  width:250px;
+  height:300px;
+}
 
-
-
- .current-weather{
-        top: 25px;
-        left: 50px;
-        background: radial-gradient(#eee, #5793cf);
-        color:#043869;
-        box-shadow: 0 0 30px #FFFFFA;
-        opacity: .8;
-        width:400px;
-        font-size: 20px;
-        margin-left:2em;
-      
-    }
+#fish-article-image{
+    
+  float:right;
+  width:400px;
+  height:300px;
+  margin-top: 6.2em;
+}
+#home-article-image{
+    
+  float:right;
+  width:400px;
+  height:300px;
+  margin-top: 6.2em;
+}
 
    
     #forecast-title{
         margin-top:1em;
     }
     
-
-
-
-.contact {
-    display: block;
   
-  }
 
-  .contact div, .social-media{
- margin-left:45em;
-  
-  }
-   
-
-
-
-#map-image{
-    padding:15px;
-    float:left;
-   margin-top: -2em;
-    width:400px;
-    height:340px;
-    
-}
-
+    #instagram{
+      margin-left: -0.3em;
+    }
+    .contact-section{
+      height: 400px;
+      max-height: 100%;
+    }
+    .contact-group img{
+     margin-left:6em;
+    }
+      #map-image{
+        padding:15px;
+        float:left;
+        margin-left: 8em;
+         margin-top: -1em;
+         width:350px;
+         height:350px;
+        max-width: 100%;
+        
+      }
 footer{
-  margin-top: 6em;
+  margin-top:2em;
 }
 
 
@@ -132,7 +148,7 @@ picture img { width: 100%; height: auto; }
 form{
   margin: 0 auto;
   width:700px;
-  margin-top: 3em;
+  margin-top: 1em;
 }
 textarea{
   min-width:400px;
@@ -141,7 +157,7 @@ textarea{
 }
 .title-page{
   margin-left:12.6em;
-  margin-top: 2em;
+  margin-top: 1em;
   padding:5px;
 }
 

@@ -14,14 +14,11 @@
 <body>
    
     <header class="clearfix"> 
-        
         <img id=logo src="images/weather-icon.png" alt="logo" srcset="images/weather-icon.png" >
-         
-
         <section class="headings">
             <h1 id="site-title">How is the weather today</h1>
             <div class="motto">The precise forecast</div>
-        </section>
+            </section>
     </header>
     <section id="friday-banner">
         <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
@@ -42,11 +39,10 @@
     <main>
         <h1 id="title">Preston Idaho</h1>
         <div class="pages-section">
+            
             <picture class="preston-img">
-                    <source srcset="images/image640.jpg" media= "(min-width: 500px) and (max-width: 639px)">
-                    <source srcset="images/image640.jpg" media= "(min-width: 640px) and (max-width:799px)" >
-                    <source  srcset="images/image800.jpg" media= "(min-width:800px)" >
-            <img id="preston-image" src="images/image 507.jpg"  alt="idaho-landscape">
+                   
+            <img id="preston-image" src="images/preston original.jpg"  alt="Preston Mountains landscape">
            
                             </picture>
         <section class="current-weather">
@@ -58,11 +54,11 @@
             <p>Wind Speed:&nbsp;<span id="windSpeed"></span>&nbsp;mph</p>
             <p>Humidity:&nbsp;<span id="humidity"></span>%</p>
         </section>
-        </div>
-
+  
         <h1 id="forecast-title">Five Day Forecast</h1>
+   
         <section class="forecast">
-           
+            
             <div class="forecast-day">
              <p ><span id="dayofWeek1"></span></p>
              <img src="" alt="" id="icon1"> 
@@ -92,23 +88,27 @@
              <img src="" alt="" id="icon5"> 
              <p><span id="fiveDayForecast5"></span>&deg;F</p>
             </div>
-            </div>
+           
              
           
             
     </section>
-    <div class="events"><h2>Upcoming Events</h2></div>
+    <h1 id="events-title">Upcoming Events</h1>
+    <div class="events"></div>
     
     <section class="article-section">
-            <h1 id="article-title ">Article Title</h1>    
-            <img id="article-image" src="images/article pic.png" alt="kids under the rain">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt dolores facere magni ipsa eius, obcaecati quasi at velit deleniti sequi hic culpa dolorum non neque rerum sint quae nobis!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad facere maxime dolores molestias molestiae obcaecati nesciunt eligendi doloribus, ab fugiat voluptas sint praesentium veniam cum adipisci placeat fugit perferendis vero?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque quos explicabo ipsum nesciunt tempore exercitationem consectetur nostrum, consequuntur obcaecati nisi magni voluptatum pariatur dolores, a doloribus excepturi inventore laudantium.</p>
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi beatae sed autem, architecto non blanditiis! Iure sed, aliquid tempore assumenda culpa incidunt animi earum saepe, reprehenderit, nam nobis provident?</p>
+        <div class="article">
+            <img class="article-image" id="preston-article-image" src="images/preston-article.jpg" alt="kids under the rain">
             
-   
+            <h1 class="article-title ">Preston is a vacationer’s dream</h1>  <p class="author">by Saundra Hubbard from the Preston Citizen</p> 
+            <p>Winter brings the best snow and the most beautiful winter scenery. Snowmobiling and cross country skiing is great. You can travel down Mink Creek, Cub River, and even Logan Canyon and see the most beautiful winter wonderland ever, ending up at Bloomington or Bear Lake.
+                Spring brings golfing at our 18-hole course, floating and kayaking down the beautiful Bear River, as well as fishing, boating, water-skiing or just camping at our 10 reservoirs. There are three swimming resorts close by and also a new swimming pool in town.    
+                In June, the Elks Demolition Derby is in the arena. The next weekend, we leave Preston City and go south to Franklin for Idaho Days, which is a celebration of the oldest city in Idaho, with a weekend of parades, games and good food. On July 24, our rodeo arena becomes a lighted celebration with the Rotary Club’s Fireworks Extravaganza, and the next weekend it’s That Famous Preston Night Rodeo, sidewalk sales, chuck wagon breakfasts, and the biathlon. There’s team branding, team penning, team roping, and on Friday, something new is being planned that will be fun for the whole family. Come Saturday, there’s the Famous Bull Bonanza and the Wild Cow Milking Contest. August brings the Franklin County Fair, which is always full of things to do.
+                November is the month for the Festival of Lights, starting the day after Thanksgiving. Friday evening there are fireworks and the Lighted Parade. On Saturday, we have the bed races down State Street, followed by the Children’s Parade. There are also fireworks and a parade Saturday evening. </br> </br>Original Article on <a class="links" href="https://prestonchamber.org/community/recreation/">Preston Chamber Area</a></p>
+        </div>
+           
     </section>
+
     <section class="contact-section">
         <h1 id="contact-title">Contact information</h1>
         <div>
@@ -116,47 +116,44 @@
         </div>
         <div class="contact">
             
-            <div>
+            <div class= "contact-group">
             <img class="contact-icons" src="images/location.png" alt="location-icon">
             <p >49 N State St Ste 102, Preston, ID</p> 
             </div>
-            <div>
+            <div class= "contact-group">
             <img class="contact-icons" src="images/telephone.png" alt="telephone-icon">
             <p>000-111-222</p>
             </div>
-            <div>
+            <div class= "contact-group">
             <img class="contact-icons"src="images/email.png" alt="email-icon" >
             <p> howishtheweathertoday@info.com</p>
-        </div>
-        </div>
-        <div class= "social-media">
-    
-                <a href="https://www.facebook.com/" target="_blank">
-                <img class="media" src= "images/facebook icon.png" alt="Facebook Icon">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                <img class="media" src= "images/instagram.png" alt="Instagram Icon">
+            </div>
+            <div class= "contact-group">
+                <a href="https://www.facebook.com/" >
+                <img id="facebook" src= "images/facebook icon.png" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com/">
+                <img id="instagram" src= "images/instagram.png" alt="Instagram Icon">
                 </a>
             </div>
-          
                 </div> 
-      
+           
+    
          
     </section>
+</div>
     </main>
     <footer>
-        <p>&copy; <span id="date"></span> | Preston Weather Site | Idaho  </p>  
+        <p class="footer-text">&copy; <span id="date"></span> | <a class="links" href="index.html">How is the weather today</a> | Ecuador | Michelle Gutiérrez </p>  
            
          </footer>
             <script src="JS/script.js"> </script>
             
-    
+           <script> currentW('5604473');
+            forecast('5604473');
+            getEvents("Preston");</script>
             <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
             <script>
                 WebFont.load({ google: { families: ['Merriweather Sans, Source Sans Pro ']}});
-                currentWeather('5604473');
-                forecast('5604473');
-                getTownEvents("Preston");
             </script>
 
       
