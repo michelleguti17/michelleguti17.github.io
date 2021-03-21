@@ -16,17 +16,17 @@ if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver((items, observer) => {
     items.forEach((item) => {
       if (item.isIntersecting) {
-        loadImages(item.target);
-        observer.unobserve(item.target);
+      loadImages(item.target);
+      observer.unobserve(item.target);
       }
     });
   });
   imagesToLoad.forEach((img) => {
-    observer.observe(img);
+  observer.observe(img);
   });
 } else {
   imagesToLoad.forEach((img) => {
-    loadImages(img);
+  loadImages(img);
   });
 }
 
@@ -152,7 +152,7 @@ console.log (windchill);
   });
 
 }
-// 5 day forecast PRESTON
+// Towns 5 day forecast
 
 
 function forecast(townsID) {
@@ -182,25 +182,27 @@ fetch(requestURl)
  
 });
 }
+//Towns events
 function getEvents(townsEvents) {
-  const eventsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+  const eventsURL = "https://byui-cit230.github.io/weather/data/towndata.json";
   
   fetch(eventsURL)
     .then(function (response) {
       return response.json();
     })
     .then(function (jsonObject) {
-      const towns = jsonObject["towns"];
+    const towns = jsonObject["towns"];
       for (let i = 0; i < towns.length; i++ ) {
-        if (towns[i].name == townsEvents) {
-          let events = towns[i].events;
-          let eventInfo = document.createElement ("div");
-          for (let i=0; i < events.length; i++) {
-             let eachEvent = document.createElement("p");
-              eachEvent.innerHTML = events[i];
-              eventInfo.appendChild(eachEvent);
-              document.getElementById("events").appendChild(eventInfo);
-              }
+      if (towns[i].name == townsEvents) {
+      let events = towns[i].events;
+      let eventInfo = document.createElement ("div");
+       
+      for (let i=0; i < events.length; i++) {
+      let eachEvent = document.createElement("p");
+      eachEvent.innerHTML = events[i];
+      eventInfo.appendChild(eachEvent);
+      document.getElementById("events").appendChild(eventInfo);
+        }
         }
       }
       });
