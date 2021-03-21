@@ -128,8 +128,14 @@ div.town {
 
 .places img{
 	max-width: 100%;
+    align-items: center;
+	padding:10px;
 }
-
+.motto{
+	text-align: center;
+	 color: #043869;
+	 font-size:16px;
+   }
 .info:nth-child(odd) {
    
 	text-align: center;

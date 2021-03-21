@@ -82,7 +82,8 @@ fetch(requestURL)
       let images = document.createElement("img");
       info.setAttribute("class","info");
       h2.setAttribute("class","info");
-      townName.setAttribute("class","town")
+      townName.setAttribute("class","town");
+      motto.setAttribute ("class", "motto");
      
       // Call JSON information
       h2.innerHTML = towns[i].name;
@@ -132,7 +133,7 @@ console.log (windchill);
 
 
 
-// Weather Summary PRESTON
+// Weather Summary 
  function currentW(city) {
   const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + city + "&units=imperial&appid=322f9b768407057c9f7ae572f8cd7a97";
   fetch(apiURL)
@@ -204,6 +205,6 @@ function getEvents(townsEvents) {
       document.getElementById("events").appendChild(eventInfo);
         }
         }
-      }
-      });
+        }
+    });
     }
