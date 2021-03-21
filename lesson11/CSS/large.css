@@ -165,7 +165,7 @@ textarea{
 div.places{
   display: grid;
     grid-template-columns: repeat(3, 1fr);
-          grid-gap: 30px;
+          grid-gap: 50px;
       max-width:100%;
   
   }
@@ -173,6 +173,7 @@ div.places{
   div.town img{
     display: block;
     margin: 0 auto;
+    max-width:100%;
     
   }
   
@@ -180,10 +181,12 @@ div.places{
     display: block;
   
   }
+ 
   
+
   #idaho-home{
   height:540px;
   
   }
-  
+ 
 }
