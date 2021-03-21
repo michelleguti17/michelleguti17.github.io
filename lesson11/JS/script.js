@@ -155,8 +155,8 @@ console.log (windchill);
 // 5 day forecast PRESTON
 
 
-function forecast(city) {
-const requestURl = "https://api.openweathermap.org/data/2.5/forecast?id=" + city + "&units=imperial&appid=322f9b768407057c9f7ae572f8cd7a97";
+function forecast(townsID) {
+const requestURl = "https://api.openweathermap.org/data/2.5/forecast?id=" + townsID + "&units=imperial&appid=322f9b768407057c9f7ae572f8cd7a97";
 
 fetch(requestURl)
 .then((response) => response.json())
@@ -182,7 +182,7 @@ fetch(requestURl)
  
 });
 }
-function getEvents(town) {
+function getEvents(townsEvents) {
   const eventsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
   
   fetch(eventsURL)
@@ -190,14 +190,16 @@ function getEvents(town) {
       return response.json();
     })
     .then(function (jsonObject) {
-      const towns = jsonObject['towns'];
+      const towns = jsonObject["towns"];
       for (let i = 0; i < towns.length; i++ ) {
-          if (towns[i].name == town) {
-              let events = towns[i].events;
-              for (let i=0; i < events.length; i++) {
-                  let event = document.createElement('p');
-                  event.innerHTML = events[i];
-                  document.querySelector('.events').appendChild(event);
+        if (towns[i].name == townsEvents) {
+          let events = towns[i].events;
+          let eventInfo = document.createElement ("div");
+          for (let i=0; i < events.length; i++) {
+             let eachEvent = document.createElement("p");
+              eachEvent.innerHTML = events[i];
+              eventInfo.appendChild(eachEvent);
+              document.getElementById("events").appendChild(eventInfo);
               }
         }
       }
