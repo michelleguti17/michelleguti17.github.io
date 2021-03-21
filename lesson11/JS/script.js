@@ -83,7 +83,7 @@ fetch(requestURL)
       info.setAttribute("class","info");
       h2.setAttribute("class","info");
       townName.setAttribute("class","town");
-      motto.setAttribute ("class", "motto");
+      motto.setAttribute ("class", "motto-towns");
      
       // Call JSON information
       h2.innerHTML = towns[i].name;
