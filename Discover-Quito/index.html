@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How is the weather today</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="CSS/small.css"/>
+    <link rel="stylesheet" href="CSS/medium.css"/>
+    <link rel="stylesheet" href="CSS/large.css"/>
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+ 
+</head>
+<body>
+   
+    <header class="clearfix"> 
+        <img id=logo src="images/DQLOGO@4x.png" alt="logo" srcset="images/DQLOGO@4x.png" >     
+    </header>
+    <nav>
+            <button onclick="toggleMenu()">&#9776 Menu</button>
+            <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="city.html">City</a></li>
+            <li ><a href="joinUs.html">Join Us</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contactUs.html">Contact Us </a></li>
+            </ul>
+    </nav>
+    
+        
+   
+   
+    <!--<img id="home-image" src="images/basilica.jpg"  alt="Church Basilica in Quito internally">-->
+    <section id="friday-banner">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </section>
+
+
+
+
+
+
+
+    <main>
+    <h1 id="title">Home Page</h1>
+   <!-- Slideshow container -->
+
+<div class="slideshow-container">
+   
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img  class="img-gallery" src="images/basilica.jpg" >
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img class="img-gallery" src="images/montanasquito.jpg">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img class="img-gallery" src="images/quitocity.jpg">
+      <div class="text">Caption Three</div>
+    </div>
+    
+   
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+</div>
+
+
+           
+ 
+           
+             
+        
+                    
+    <div class="places">
+         
+ 
+</div>   
+    <section class="article-section">
+        <div class="article">
+            <img class= "article-image" id="home-article-image" src="images/boise.jpg" alt="Boise City in idaho. Buildings in Boise Ihado.">
+            
+            <h1 class="article-title ">The 5 Best Spring Adventure Destinations in Idaho</h1>  <p class="author">by The Outbound Collective</p> 
+            <p>ong, sunny days are just around the corner.
+
+                We love adventures in the snow, but winters in Idaho can be long and cold and we know you’re getting just as excited as we are for springtime. With the weather warming up and the days growing longer, now is the time to plan your trip to explore Idaho this spring. Gather your friends and family and get ready to make some memories at all of these beautiful locations.</br> </br>Read the full article at <a class="links" href="https://www.theoutbound.com/theoutbound/the-5-best-spring-adventure-destinations-in-idaho">The Outbound Collective</a></p>
+        </div>
+           
+    </section>
+             <section class="contact-section">
+                <h1 id="contact-title">Contact information</h1>
+                <div>
+                <img id="map-image" src="images/Preston mapa.png" alt="preston map">
+                </div>
+                <div class="contact">
+                    
+                    <div class= "contact-group">
+                    <img class="contact-icons" src="images/location.png" alt="location-icon">
+                    <p >49 N State St Ste 102, Preston, ID</p> 
+                    </div>
+                    <div class= "contact-group">
+                    <img class="contact-icons" src="images/telephone.png" alt="telephone-icon">
+                    <p>000-111-222</p>
+                    </div>
+                    <div class= "contact-group">
+                    <img class="contact-icons" src="images/email.png" alt="email-icon" >
+                    <p> howishtheweathertoday@info.com</p>
+                    </div>
+                    <div class= "contact-group">
+                        <a href="https://www.facebook.com/" >
+                        <img id="facebook" src= "images/facebook icon.png" alt="Facebook Icon"></a>
+                        <a href="https://www.instagram.com/">
+                        <img id="instagram" src= "images/instagram.png" alt="Instagram Icon">
+                        </a>
+                    </div>
+                        </div> 
+                   
+            
+                 
+            </section>
+      
+            </main>
+            <footer>
+                <p class="footer-text">&copy; <span id="date"></span> |<a class="links" href="index.html">How is the weather today</a> | Ecuador | Michelle Gutiérrez </p>  
+                 </footer>
+                    <script src="JS/script.js"> </script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+                    <script>
+                        WebFont.load({ google: { families: ['Merriweather Sans, Source Sans Pro ']}});
+                        currentWeather('5604473');
+                        forecast('5604473');
+                        getTownEvents("Preston");
+                    </script>
+        
+              
+            
+        </body>
+        </html
