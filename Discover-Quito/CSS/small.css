@@ -8,7 +8,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 body{
     background-color: #04142D;
-    
+
    
    
 }
@@ -191,3 +191,14 @@ h1, h2, h3, p{
   width:50%;
   margin: 0 auto;
 }
+
+
+
+/*CITY*/
+/*JOIN US*/
+/*DIRECTORY*/
+#directory img{
+  width:200px;
+  max-width: 100%;
+}
+/*CONTACT US*/
