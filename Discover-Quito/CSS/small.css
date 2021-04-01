@@ -8,6 +8,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 body{
     background-color: #04142D;
+    
    
    
 }
@@ -180,4 +181,13 @@ nav ul.hide{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+h1, h2, h3, p{
+  color: white;
+}
+
+#company-section img{
+  width:50%;
+  margin: 0 auto;
 }
