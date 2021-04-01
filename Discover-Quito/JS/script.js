@@ -133,3 +133,14 @@ function showSlides() {
 });
 
 
+function ShowSelected()
+{
+/* Para obtener el valor */
+var cod = document.getElementById("membership").value;
+alert(cod);
+ 
+/* Para obtener el texto */
+var combo = document.getElementById("membership");
+var selected = combo.options[combo.selectedIndex].text;
+alert(selected);
+}
