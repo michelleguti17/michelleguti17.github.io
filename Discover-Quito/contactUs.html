@@ -23,9 +23,9 @@
             <ul id="primaryNav" class="hide">
             <li ><a href="index.html">Home</a></li>
             <li><a href="city.html">City</a></li>
-            <li class="active"><a href="joinUs.html">Join Us</a></li>
+            <li ><a href="joinUs.html">Join Us</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li><a href="contactUs.html">Contact Us </a></li>
+            <li class="active"><a href="contactUs.html">Contact Us </a></li>
             </ul>
     </nav>
 
@@ -43,29 +43,55 @@
                 <label for="title">Title:<input class= "form-data" type="text" id="title-form" name="title"  minlength="5" maxlength="10" size="30"></label></br>   
                 <label for="email">Email:<input class="form-data" type="email" id="email" name="email" placeholder="address@domain.com" size="30"></label></br>
                 <label for="phone">Phone:<input   class="form-data" type="tel" id="telephone" name="tel" required="" minlength="10" size="30"></label></br>
-            </div>  
+           </div>  
+           <div class="comment-box"> 
+            <h2>Add any comment of information here:</h2>
+            <textarea id="comment" name="message" maxlength="500"></textarea>
+            <input class="button" type="submit" value="Submit">
+           </div>
+             
            
-               <p>Business Description:</p> <textarea id="comment" name="message" maxlength="500"></textarea>
-            </div>
-            <div class= "form-input">
-            <label for="membership">Memberships:</label>
-            <select id="membership" name="membership" onchange="ShowSelected();">
-                <option selected="">Select your membership</option>
-                <option value="Non-profit ">Non-profit ($100)</option>
-                <option value="Bronze">Bronze ($200)</option>
-                <option value="Silver">Silver ($400)</option> 
-                <option value="Gold">Gold ($1000)</option>
-            </select>
-            </div>
 
         </fieldset>
         </div>
         </form>
+        <h1 id="title">Board Directory</h1>
+        <div class="board">
+            <picture>
+               
+                <img  class="board-img" id="member1-img" src="data/img/placeholder.jpg" data-src="data/img/mujer1.jpg" alt="sunny weather">
+                <figcaption>Yolanda Ortiz</figcaption>
+                <figcaption>Lead Director</figcaption>
+            </picture>
+            <picture>
+                <img  class="board-img" id="member2-img" src="data/img/placeholder.jpg" data-src="data/img/hombre2.jpg" alt="cloudy weather">
+                <figcaption>Paco Solis</figcaption>
+                <figcaption>Committe Chair</figcaption>
+            </picture>
+            <picture>
+                <img  class="board-img" id="member3-img" src="data/img/placeholder.jpg" data-src="data/img/hombre3.jpg" alt=" snow weather">
+                <figcaption>Neiser de la Cruz</figcaption>
+                <figcaption>Treasurer</figcaption>
+            </picture>
+            <picture>
+                <img  class="board-img" id="member-img" src="data/img/placeholder.jpg" data-src="data/img/hombre4.jpg" alt="rainbow weather">
+                <figcaption>Juan Jose Flores</figcaption>
+                <figcaption>Vice Chair</figcaption>
+            </picture>
+          
+   </div>
+
+
+
+
+
         <section class="contact-section">
             <h1 id="contact-title">Contact information</h1>
                      
             <div class="contact">
-                           
+            <div class= "contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7888868079813!2d-78.51334341318531!3d-0.2200809999456265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59987820f190f%3A0x294cb69e1f4ca35e!2sPlaza%20Grande!5e0!3m2!1ses!2sec!4v1617321140446!5m2!1ses!2sec" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
+             </div>            
              <div class= "contact-group">
              <img class="contact-icons" src="images/map.png" alt="location-icon">
              <p >Cuenca 477, Quito 170401</p> 
@@ -94,7 +120,8 @@
             <footer>
                <p class="footer-text">&copy; <span id="date"></span> |<a class="links" href="index.html">Discover Quito</a> | Ecuador | Michelle Gutiérrez </p>  
             </footer>
-             <script src="JS/script.js"> </script>
+             <script src="JS/lazyloading.js"></script>
+             <script src = "JS/script.js"></script>
              <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
              <script>
                  WebFont.load({ google: { families: ['Merriweather Sans, Source Sans Pro ']}});

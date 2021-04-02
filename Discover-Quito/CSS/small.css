@@ -202,3 +202,23 @@ h1, h2, h3, p{
   max-width: 100%;
 }
 /*CONTACT US*/
+picture img {  width:300px; max-width: 100%;  }
+
+     figcaption{
+       font-family: 'Merriweather Sans', sans-serif;
+       font-size:smaller;
+       color: #FFFFFA;
+       padding-left: 10px;
+     
+     }
+     picture img[data-src] {
+        filter: blur(0.2em);
+       
+      }
+      
+     picture img {
+        filter: blur(0em);
+        transition: filter 0.1s;
+        padding: 10px;
+        
+      }
