@@ -144,3 +144,5 @@ var combo = document.getElementById("membership");
 var selected = combo.options[combo.selectedIndex].text;
 alert(selected);
 }
+
+
