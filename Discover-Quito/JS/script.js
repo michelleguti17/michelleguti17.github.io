@@ -55,40 +55,35 @@ function showSlides() {
 
 
 
-  const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=3652462&units=imperial&appid=322f9b768407057c9f7ae572f8cd7a97";
+  const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=-0.2299&lon=-78.5249&exclude=hourly,minutely&units=imperial&appid=322f9b768407057c9f7ae572f8cd7a97"
   fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
 
-    let current = jsObject.main.temp;
+    let current = jsObject.current.temp;
     document.getElementById("current-temp").innerHTML =  Math.round(current);
-    document.getElementById("high-temp").innerHTML = Math.round(jsObject.main.temp_max);
-    document.getElementById("windSpeed").innerHTML = jsObject.wind.speed;
-    document.getElementById("humidity").innerHTML = jsObject.main.humidity;
-    document.getElementById("current-2").innerHTML =  jsObject.weather[0].main;
-
+    document.getElementById("humidity").innerHTML = jsObject.current.humidity;
+    document.getElementById("description").innerHTML =  jsObject.current.weather[0].description;
+    document.getElementById("current-2").innerHTML =  jsObject.current.weather[0].main;
   });
 
-  const requestURl = "https://api.openweathermap.org/data/2.5/forecast?id=3652462&units=imperial&appid=322f9b768407057c9f7ae572f8cd7a97";
-  
+  const requestURl =  "https://api.openweathermap.org/data/2.5/onecall?lat=-0.2299&lon=-78.5249&exclude=hourly,minutely&units=imperial&appid=322f9b768407057c9f7ae572f8cd7a97"
   fetch(requestURl)
   .then((response) => response.json())
    .then((jsObject) =>{
    
     let day =  0; 
-    const dayofWeek = ["Sun" , "Mon" , "Tue" , "Wed", "Thu", "Fri" , "Sat"];
-    const fiveDayForecast = jsObject.list.filter((day) =>
-    day.dt_txt.includes("18:00:00"));
+    const dayofWeek = ["Sunday" , "Monday" , "Tuesday" , "Wednesday", "Thursday", "Friday" , "Saturday"];
+    const threeDayForecast = jsObject["daily"];
+
+    threeDayForecast.forEach (daily => {
    
-  
-     fiveDayForecast.forEach (list => {
-     const listF = list.dt_txt;
-     let newDay = new Date(listF).getDay()
-     const imagesrc = "https://openweathermap.org/img/w/" +list.weather[0].icon + ".png";
-     document.getElementById(`dayofWeek${day+1}`).innerHTML = dayofWeek[newDay];
-     document.getElementById(`fiveDayForecast${day+1}`).innerHTML = Math.round(list.main.temp);
-     document.getElementById(`icon${day+1}`).setAttribute("src", imagesrc);  
-     document.getElementById(`icon${day+1}`).setAttribute("alt", list.weather[0].description);
+     let newDay =  new Date(jsObject.daily[day + 1].dt * 1000).getDay()
+     const imagesrc = "https://openweathermap.org/img/wn/" + threeDayForecast[day].weather[0].icon + ".png";
+     document.getElementById(`dayofWeek${day + 1 }`).innerHTML = dayofWeek[newDay];
+     document.getElementById(`fiveDayForecast${day + 1}`).innerHTML =  threeDayForecast[day].temp.day;
+     document.getElementById(`icon${day + 1}`).setAttribute("src", imagesrc);  
+     document.getElementById(`icon${day + 1}`).setAttribute("alt", threeDayForecast[day].weather[0].description);
      day++;
       });
       

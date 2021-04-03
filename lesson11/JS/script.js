@@ -167,10 +167,11 @@ fetch(requestURl)
   const dayofWeek = ["Sun" , "Mon" , "Tue" , "Wed", "Thu", "Fri" , "Sat"];
   const fiveDayForecast = jsObject.list.filter((day) =>
   day.dt_txt.includes("18:00:00"));
- 
+  console.log(fiveDayForecast);
 
    fiveDayForecast.forEach (list => {
    const listF = list.dt_txt;
+   
    let newDay = new Date(listF).getDay()
    const imagesrc = "https://openweathermap.org/img/w/" +list.weather[0].icon + ".png";
    document.getElementById(`dayofWeek${day+1}`).innerHTML = dayofWeek[newDay];

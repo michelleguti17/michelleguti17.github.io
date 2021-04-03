@@ -14,47 +14,27 @@
  
 </head>
 <body>
-   
-    <header class="clearfix"> 
-        <img id=logo src="images/DQLOGO@4x.png" alt="logo" srcset="images/DQLOGO@4x.png" >     
-      </header>
-    <nav>
-            <button onclick="toggleMenu()">&#9776 Menu</button>
-            <ul id="primaryNav" class="hide">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="city.html">City</a></li>
-            <li ><a href="joinUs.html">Join Us</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="contactUs.html">Contact Us </a></li>
-            </ul>
-    </nav>
-  
-  
-
-
-    <main>
+ 
     
-   <!-- Slideshow container -->
+  <!-- Slideshow container -->
   
-   <div class="slideshow-container">
+  <div class="slideshow-container">
    
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
+     
       <img  class="img-gallery" src="images/basilica.jpg" >
-      <div class="text">Caption Text</div>
     </div>
   
     <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
       <img class="img-gallery" src="images/montanasquito.jpg">
-      <div class="text">Caption Two</div>
+      
     </div>
   
     <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
+      
       <img class="img-gallery" src="images/quitocity.jpg">
-      <div class="text">Caption Three</div>
+      
     </div>
     
    
@@ -70,54 +50,76 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
+  <header class="clearfix"> 
+    <img src="images/DQLOGO@4x.png" alt="logo" srcset="images/DQLOGO@4x.png" >     
+  </header>
+<nav>
+        <button onclick="toggleMenu()">&#9776</button>
+        <ul id="primaryNav" class="hide">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="city.html">City</a></li>
+        <li ><a href="joinUs.html">Join Us</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contactUs.html">Contact Us </a></li>
+        </ul>
+</nav>
 
 </div>
 
-<section class="current-weather">
-    <h2>Weather Summary</h2>
-    <p>Currently :  <span id="current-2"></span>&nbsp;&nbsp;<span id="current-temp"></span>&deg;F</p>
-    
-    <p>High: <span id="high-temp">32</span>&deg;F</p>
-    <p>Wind Speed:&nbsp;<span id="windSpeed"></span>&nbsp;mph</p>
-    <p>Humidity:&nbsp;<span id="humidity"></span>%</p>
-</section>
-      
-<h1 id="forecast-title">Three Day Forecast</h1>
-   
-<section class="forecast">
-    
-    <div class="forecast-day">
-     <p ><span id="dayofWeek1"></span></p>
-     <img src="" alt="" id="icon1"> 
-     <p><span id="fiveDayForecast1"></span>&deg;F</p>
-    </div>
 
+<main>
+    
+  <div id= "company-section"></div>  
+  <section class = "events">
+    <h1 class= "events-title">Upcoming Events</h1>
+    <p>April 7: Políticamente incorrecto - Stand up comedy</p>
+    <p> April 13-14: City museum tour</p>
+    <p> April 17: Bonfire Festival 2021 </p>
+    <p> April 22: Conversation Letter and memory</p>
+  </section>      
+            
+
+<section class="current-weather">
+    <h2 class="weather-title">Weather Summary</h2>
+    <p>Currently : &nbsp;<span id="current-2"></span>&nbsp;&nbsp;/&nbsp;<span id="current-temp"></span>&nbsp;<span id="current-temp"></span>&deg;F</p>
+    <p>Description:&nbsp;<span id="description"></span></p>
+    <p>Humidity:&nbsp;<span id="humidity"></span>%</p>
+   
+
+
+      
+
+    <h1 class="weather-title">Three Day Forecast</h1>
+<div class="forecast">
+
+  
+ 
     <div class="forecast-day">
-     <p ><span id="dayofWeek2"></span></p>
-     <img src="" alt="" id="icon2"> 
-     <p >  <span id="fiveDayForecast2"></span>&deg;F</p>
-       
-    </div>
+      
+     <h3 ><span id="dayofWeek1"></span></h3>
+     <img src="" alt="" id="icon1"> 
+     <h4><span id="fiveDayForecast1"></span>&deg;F</h4>
+     </div>
+
      <div class="forecast-day">
-     <p ><span id="dayofWeek3"></span></p>
+     <h3 ><span id="dayofWeek2"></span></h3>
+     <img src="" alt="" id="icon2"> 
+     <h4 >  <span id="fiveDayForecast2"></span>&deg;F</h4>
+     </div>
+     <div class="forecast-day">
+     <h3 ><span id="dayofWeek3"></span></h3>
      <img src="" alt="" id="icon3"> 
-     <p ><span id="fiveDayForecast3"></span>&deg;F</p>
-    </div> 
+     <h4><span id="fiveDayForecast3"></span>&deg;F</h4>
+ 
+    </div>
 </section>
-     <section class = "events">
-         <h1>Upcoming Events</h1>
-         <p>April 7: Políticamente incorrecto - Stand up comedy</p>
-         <p> April 13-14: City museum tour</p>
-         <p> April 17: Bonfire Festival 2021 </p>
-         <p> April 22: Conversation Letter and memory</p>
-     </section>      
-             
+     
         
-     <div id= "company-section"></div>  
+     
                     
     
      <section id= "chamber-home">
-       <img src = "images/turismo-en-quito-el-panecillo.jpg" alt= "Quito Panecillo monumentos">  
+       <img id= "chamber-img" src = "images/turismo-en-quito-el-panecillo.jpg" alt= "Quito Panecillo monumentos">  
        <input class="button" type="submit" value= "Join our chamber">
        <div id="chamber-description">
          <p>Join our chamber that will help you to build your professional networks, know more about the city, have access to unique business events. In addition, get access to a wide range of business support to help grow your business.</p>
@@ -158,12 +160,6 @@
         <p class="footer-text">&copy; <span id="date"></span> |<a class="links" href="index.html">Discover Quito</a> | Ecuador | Michelle Gutiérrez </p>  
      </footer>
       <script src="JS/script.js"> </script>
-      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-      <script>
-          WebFont.load({ google: { families: ['Merriweather Sans, Source Sans Pro ']}});
-      
-      </script>
-        
               
             
         </body>
