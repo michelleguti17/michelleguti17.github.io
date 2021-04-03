@@ -1,13 +1,13 @@
 {
     "business":[
     {
-        "logo": "images/pimsLogo.png",
-        "businessName": "Pim's",
-        "info": "Traditional Food Restaurant.",
-        "adress":"General Melchor Aymerich - Cima del Panecillo s/n ",
-        "phone": "(02)3170878",
-        "email": "areacomercial@grupopims.com",
-        "website":"https://www.restaurantepims.com/"
+        "logo": "images/comercioLogo.png",
+        "businessName": "Cámara de Comercio De Quito",
+        "info": "Business Networking and Education.",
+        "adress":"Matriz: Av. Amazonas y República, Edificio Las Cámaras ",
+        "phone": "(02) 976 500",
+        "email": "ccq@lacamaradequito.coms",
+        "website":"https://ccq.ec/"
     },
    {
         "logo": "images/multicinesLogo.png", 
@@ -46,13 +46,13 @@
         "website":"https://www.teatrosucre.com/escenario/teatro-nacional-sucre"
     },
     {
-        "logo": "images/garuaLogo.jpg",
-        "businessName": "Garua Cafe",
-        "info": "Art Gallery, Music and Cafe",
-        "adress":"Joaquín Pinto E7-38 y Reina Victoria",
-        "phone": "0997132286",
-        "email": "garuacafe@gmail.com",
-        "website":"http://www.garuacafe.com"
+        "logo": "images/corunaLogo.png",
+        "businessName": "Inmobilaria La Coruna",
+        "info": "Real State Agency",
+        "adress":"Av. Francisco de Orellana E12-113 y San Ignacio, 170517",
+        "phone": "0998044627",
+        "email": "daraujo@lacoruna.com.ec",
+        "website":"https://lacoruna.com.ec/"
     },
     {
         "logo": "images/plazaHLogo.jpg",
@@ -64,13 +64,13 @@
         "website":"http://www.plazagrandequito.com"
     },
     {
-        "logo": "images/museoSLogo.png",
-        "businessName": "Museo San Francisco de Quito",
-        "info": "Museum of colonial religious art. Works from the 17th 18th 19th centuries.",
-        "adress":"Cuenca 477 y Sucre",
-        "phone": "098 729 9479",
+        "logo": "images/explocenLogo.png",
+        "businessName": "Explocen",
+        "info": "Mining and trading company.",
+        "adress":"Av. Coruña E25-58 y 12 de Octubre, Edificio Altana plaza 6to piso",
+        "phone": " (02)3230-492",
         "email": "museopedrogocial@hotmail.com",
-        "website":"http://www.museopedrogocial.com.ec"
+        "website":"https://www.explocen.com.ec/"
     },
     {
         "logo": "images/mrbooksLogo.jpg",

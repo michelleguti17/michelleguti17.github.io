@@ -101,7 +101,7 @@ function showSlides() {
     const business = jsonObject['business'];
 
     for(let i=0; i < business.length; i++){
-      if(business[i].businessName == "Pim's" || business[i].businessName == "Quito Tour Bus"|| business[i].businessName == "Museo San Francisco de Quito"){
+      if(business[i].businessName == "Cámara de Comercio De Quito" || business[i].businessName == "Quito Tour Bus"|| business[i].businessName == "Inmobilaria La Coruna"){
   
     // Create Elements in HTML for HOME PAGE
     let companies = document.createElement("div");
