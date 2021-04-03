@@ -93,4 +93,21 @@
        right: 30px;
       box-shadow: 1px 1px 4px #293c5a;
     }
+    .contact-group{
+      top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+      
+    }
+    #instagram{
+      margin-left: -0.3em;
+    }
+   
+    
+footer{
+  margin-top:2em;
+}
+
 }
