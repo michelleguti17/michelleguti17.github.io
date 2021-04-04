@@ -32,7 +32,36 @@
 
 
     <main> 
-        <h1 class="title-page"></h1>   
+
+        <h1 class="title-page"></h1>     
+        <h1 class=title-contact>Contact Us</h1>
+
+        <div class="contact-form">
+                <form id="form-contact" action = "thank-you-contact.html">
+           
+                <fieldset>
+                    <div class="form-input">
+                        <h2 class="contact-title">Contact Information</h2>
+                        <label for="name">First Name*:<input class="form-data" type="text" id="first-name" name="name" minlength="5" maxlength="50" size="30" required="" pattern="[A-Z][A-Za-z' -]+"></label> </br>
+                        <label for="name">Last Name*:<input class="form-data" type="text" id="name" name="name"  maxlength="50" size="30" required="" pattern="[A-Z][A-Za-z' -]+"></label> </br>
+                        <label for="title">Title:<input class= "form-data" type="text" id="title-form" name="title"  minlength="5" maxlength="10" size="30"></label></br>   
+                        <label for="email">Email:<input class="form-data" type="email" id="email" name="email" placeholder="address@domain.com" size="30"></label></br>
+                        <label for="phone">Phone:<input   class="form-data" type="tel" id="telephone" name="tel" required="" minlength="10" size="30"></label></br>
+                   </div>  
+                   <div class="form-input"> 
+                    <h2>Add any comment of information here:</h2>
+                    <textarea id="comment" name="message" maxlength="500"></textarea>
+                    <input id="contact-button"class="button-join" type="submit" value="Submit">
+                   </div>
+                     
+                   
+        
+                </fieldset>
+               
+                </form>
+                
+            </div>    
+         
         <h1 class=title-board>Board Directory</h1>
         <div class="board">
             <picture id="member1">
@@ -58,34 +87,7 @@
             </picture>
           
    </div>
-   <h1 class=title-contact>Contact Us</h1>
-
-<div class="contact-form">
-        <form action = "thank-you-contact.html">
-        <div class = "form">
-        <fieldset>
-            <div class="form-input">
-                <h2 class="contact-title">Contact Information</h2>
-                <label for="name">First Name*:<input class="form-data" type="text" id="first-name" name="name" minlength="5" maxlength="50" size="30" required="" pattern="[A-Z][A-Za-z' -]+"></label> </br>
-                <label for="name">Last Name*:<input class="form-data" type="text" id="name" name="name"  maxlength="50" size="30" required="" pattern="[A-Z][A-Za-z' -]+"></label> </br>
-                <label for="title">Title:<input class= "form-data" type="text" id="title-form" name="title"  minlength="5" maxlength="10" size="30"></label></br>   
-                <label for="email">Email:<input class="form-data" type="email" id="email" name="email" placeholder="address@domain.com" size="30"></label></br>
-                <label for="phone">Phone:<input   class="form-data" type="tel" id="telephone" name="tel" required="" minlength="10" size="30"></label></br>
-           </div>  
-           <div class="form-input"> 
-            <h2>Add any comment of information here:</h2>
-            <textarea id="comment" name="message" maxlength="500"></textarea>
-            <input id="contact-button"class="button-join" type="submit" value="Submit">
-           </div>
-             
-           
-
-        </fieldset>
-       
-        </form>
-        
-    </div>
-</div>
+   
 
 
 

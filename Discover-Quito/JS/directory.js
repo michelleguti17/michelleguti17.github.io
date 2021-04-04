@@ -55,13 +55,3 @@ fetch(directoryURl)
 
 });
 
-function gridView(){
-  const div = document.getElementById("directory");
-  div.style.display = "grid";
-  }
-  
-  //function for switching to list view
-  function listView(){
-    const div = document.getElementById("directory");
-    div.style.display = "block";  
-  }

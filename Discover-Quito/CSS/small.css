@@ -440,6 +440,9 @@ width: 48px;
 
 
 /*CITY*/
+.info-quito{
+  position: relative;
+}
 /*JOIN US*/
   /*FORM AND THANK YOU PAGE*/  
 
@@ -460,6 +463,7 @@ width: 48px;
     color:#FFFFFA;
     width:600px;
    max-width: 100%;
+   
    
 }
 
@@ -543,12 +547,19 @@ input:hover{
 }
 
 .levels{
-  background-image: linear-gradient( 135deg, #003399 20%, #011e60 80%);
+  
   color: #043869;
   width: 400px;
   max-width: 100%;
-  padding:10px;
+ 
   box-shadow: 8px 8px 4px #7e9dcf;
+  background-image: linear-gradient( 135deg, #003399 60%, #011e60 80%);
+  
+  width: 400px;
+  border-left: 13px double #df1620;
+  border-right: 13px double #df1620;
+background-color: #fafafa;
+ padding-top: -15px;
 
 }
 
@@ -561,8 +572,7 @@ input:hover{
 }
 
 .non-profit , .silver, .bronze , .gold{
-  border-left: 12px double #df1620;
-  border-right: 12px double #df1620;
+ 
 background-color: #fafafa;
  padding: 10px;
 }
@@ -658,4 +668,87 @@ background-color: #fafafa;
   max-width:100%;
  }
 
+ .info-quito{
+   width:500px;
+   max-width:100% ;
+   font-family: 'EB Garamond', serif;
+  color :#fafafa;
+  background-image: linear-gradient( 135deg, #003399 20%, #011e60 80%);
+  box-shadow: 8px 8px 4px #7e9dcf;
  
+ }
+  .info-quito p{
+  padding:8px;
+  margin-top: -0.5em;
+
+  }
+  
+  .info-quito h2{
+    padding:8px;
+ 
+    font-family: 'Playfair Display', serif;
+  
+    }
+ .info-quito img{
+  width:500px;
+  max-width:100% ;
+ 
+}
+
+#demo-list{
+background-color: #fafafa;
+list-style-type: none;
+color: #04142D;
+padding:20px;
+width:320px;
+justify-items: center;
+margin: 0 auto;
+}
+
+#demographics h2{
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+#quito-foto{
+  width:500px;
+  max-width: 100%;
+
+}
+.events-title-city{
+  margin-top: 2em;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #003399;
+  
+}
+
+.events-city {
+  background-image: linear-gradient( 135deg, #003399 60%, #011e60 80%);
+  
+  width: 400px;
+  border-left: 13px double #df1620;
+  border-right: 13px double #df1620;
+background-color: #fafafa;
+ padding-top: -15px;
+
+  box-shadow: 8px 8px 4px #7e9dcf;
+  text-align: center;
+   margin-right: 5em;
+  font-family: 'EB Garamond', serif;
+  float:right;
+  max-width:100%;
+  color :#fafafa;
+
+}
+.events-div{
+  background-color: #fafafa;
+  padding: 5px;
+  color: #04142D;
+
+}
+
+#form-contact{
+  
+  margin: 0 auto;
+}

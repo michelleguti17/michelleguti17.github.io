@@ -37,7 +37,7 @@
       nav button {display:none;}
        
     
-      #company-section {
+      #company-section ,.board {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -123,27 +123,9 @@ footer{
   margin-right:4em;
   margin-top: 4.4em;
 }
-#viewDiv{
-  display:flex;
-}
-.business{
-  width:345px;
-}
 
-#viewDiv input{
-  width:80px;
-  border:none;
-  font-weight: bold;
-  background:none;
-  color:#e0bb20;
-  outline:none;
-}
-#viewDiv input:hover{
-  color:#723535;
-}
-#viewDiv input:active{
-  color:#e0bb20;
-}
+
+
 
 #grid{
   margin-left:20px;
@@ -154,7 +136,7 @@ footer{
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.board{
+/*.board{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows:1fr 1fr ;
@@ -162,29 +144,31 @@ footer{
   margin-top: -1em;
   margin-right: 1em;
  
-}
+}*/
 .title-board{
-  text-align: right;
-  margin-right: 3em;
-  margin-top: -0.7em;
+  text-align: center;
+  
+  margin-top: 2em;
 }
 
 .title-contact{
-  text-align:left;
-  margin-left: 6em;
- margin-top: -2.1em;
+  text-align:center;
+ 
+ margin-top: 1em;
  }
 
  .contact-form{
   margin-top: -4em;
+  margin: 0 auto;
+
 }
- 
-#member3 , #member4{
-  margin-top:1em;
- 
-}
+
+
 picture{
   padding:0px;
 }
 
+.info-quito{
+  margin-left: 4em;
+}
 }
