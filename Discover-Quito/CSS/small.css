@@ -99,7 +99,7 @@ nav ul.hide{
 /* Hide the images by default */
 .mySlides {
   display: none;
- 
+  position: relative;
   
 }
 .img-gallery {
@@ -118,10 +118,11 @@ nav ul.hide{
      
 }
 
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
+  position:absolute;
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -138,16 +139,20 @@ nav ul.hide{
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+  position:absolute;
+
+ 
 }
 
 
 
-/* The dots/bullets/indicators */
+/* The dots/bullets/indicators 
 .dot {
   cursor: pointer;
   height: 15px;
@@ -157,20 +162,22 @@ nav ul.hide{
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+ 
   
-}
+}*/
 
 .active, .dot:hover {
   background-color: #717171;
+  
 }
 
-/* Fading animation */
+/* Fading animation 
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
-}
+}*/
 
 @-webkit-keyframes fade {
   from {opacity: .4}
@@ -184,20 +191,17 @@ nav ul.hide{
 
 
 
-#company-section img{
-  width:50%;
-  margin: 0 auto;
-  box-shadow: 8px 8px 4px #293c5a;
-}
+
 
 main{
   background-image: linear-gradient( 115deg, #fafafa 10%, #9ccafd 100%);
   border-right: 15px double #04142D;
   margin: 0 auto;
-  
+
   
 }
- #company-section{
+
+ #company-section , .board{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -212,7 +216,11 @@ main{
   color: #003399; 
   max-width:100%;
   }
-  
+  #company-section img{
+    width:50%;
+    margin: 0 auto;
+    box-shadow: 8px 8px 4px #7e9dcf;
+  }
   .weather-title{
     top: 0;
     left: 0;
@@ -357,7 +365,7 @@ margin-top: -1em;
   justify-content: left;
   margin-top: -12em;
   margin-left: 2em;
-  box-shadow: 1px 1px 4px #293c5a;
+  box-shadow: 3px 3px 4px #293c5a;
 }
 
 #chamber-description{
@@ -433,20 +441,174 @@ width: 48px;
 
 /*CITY*/
 /*JOIN US*/
+  /*FORM AND THANK YOU PAGE*/  
+
+  .title-page{
+    
+  font-family: 'Playfair Display', serif;
+    color: #043869;
+    margin-top: 5em;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+
+  form {margin-top: 4em;
+    padding:10px;
+    font-family: 'EB Garamond', serif;
+    color:#FFFFFA;
+    width:600px;
+   max-width: 100%;
+   
+}
+
+fieldset{
+ margin: 0 auto;
+ max-width: 100%;
+ border-style: none;
+    
+   
+}
+
+.form-input{
+    padding:10px;
+    border: 3px solid;
+    border-color: #043869;
+    padding:10px;
+    margin-top: 1em;
+    font-family: 'EB Garamond', serif;
+    position: relative;
+    background-image: linear-gradient( 135deg, #003399 20%, #011e60 80%);
+    box-shadow: 8px 8px 4px #7e9dcf;
+    max-width: 100%;
+} 
+
+input , #membership {
+  font-family: 'EB Garamond', serif;
+    display:flex;
+    padding:12px;
+    margin-top: 0.5em;
+    background-color: #fafafa;
+    
+}
+input:hover{
+    background-color: #8ab4f7;
+    color:#011e60;
+}
+
+#comment{
+    width:100%;
+    height:200px;
+    font-family: 'EB Garamond', serif;
+}
+
+
+.button-join {
+   float: right;
+    width: 85px;
+    height:35px;
+    font-size: 18px;
+
+    color:#FFFFFA;
+    background-color: #df1620;
+    margin: auto 0;
+    margin-top: 1em;
+    padding:5px;
+    justify-content: center;
+    font-family: 'EB Garamond', serif;
+    border: none;
+    box-shadow: 4px 4px 4px #7e9dcf;
+}
+
+.button-join:hover{
+    background-color: #011e60;
+    color: #fafafa;
+    font-family: 'EB Garamond', serif;
+}
+ 
+.thank-you {
+
+    padding:20px;
+     text-align: center;
+     font-family: 'EB Garamond', serif;
+      color:#04142D;
+     width:100%;
+     height: 200px;
+   
+}
+.thank-you h1{
+  margin-top: -1em;
+  color: #df1620;
+}
+
+.levels{
+  background-image: linear-gradient( 135deg, #003399 20%, #011e60 80%);
+  color: #043869;
+  width: 400px;
+  max-width: 100%;
+  padding:10px;
+  box-shadow: 8px 8px 4px #7e9dcf;
+
+}
+
+.levels h3{
+  padding:10px;
+  color: #df1620;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-top: -0.5em;
+}
+
+.non-profit , .silver, .bronze , .gold{
+  border-left: 12px double #df1620;
+  border-right: 12px double #df1620;
+background-color: #fafafa;
+ padding: 10px;
+}
+
+.levels h2{
+  text-align: center;
+}
+
+
 /*DIRECTORY*/
 #directory img{
   width:200px;
   max-width: 100%;
 }
+
+.business{
+  width:345px;
+  margin:0 auto;
+  border:2px black solid;
+  box-shadow: 8px 8px 4px #7e9dcf;
+  margin-top:10px;
+  margin-bottom:10px;
+  text-align:center;
+  padding:5px;
+  height:390px;
+  
+}
+.business{
+  
+  max-width: 98%;
+  word-wrap: break-word;   
+}
+
+#viewDiv{
+  display:none;
+  margin-top :2em;
+}
+
+
+
 /*CONTACT US*/
-picture img {  width:300px; max-width: 100%;  }
 
      figcaption{
       font-family: 'EB Garamond', serif;
-       font-size:smaller;
-       color: #FFFFFA;
-       padding-left: 10px;
-     
+       font-size:18px;
+       color: #043869;
      }
      picture img[data-src] {
         filter: blur(0.2em);
@@ -456,6 +618,44 @@ picture img {  width:300px; max-width: 100%;  }
      picture img {
         filter: blur(0em);
         transition: filter 0.1s;
-        padding: 10px;
+     
         
+       
       }
+    .board-img{
+      
+      height: 250px;
+      max-width: 100%;
+     
+     
+    }
+   picture{
+     margin-top:0.3em;
+     box-shadow: 8px 8px  4px #7e9dcf;
+     padding: 30px;
+   }
+
+   .title-board{
+    text-align: center;
+   
+  }
+
+ .contact-form{
+  margin-top: -3em;
+ }
+ .title-contact{
+  text-align:center;
+  margin-top: 2em;
+ }
+ #contact-button{
+   margin-right: -0.7em;
+  
+ }
+
+ .contact-map{
+  display: flex;
+  justify-content: center;
+  max-width:100%;
+ }
+
+ 

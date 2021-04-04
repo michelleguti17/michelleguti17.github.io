@@ -33,8 +33,15 @@
 
     <main>        
         <h1 class=title-page>Storm Center</h1>
-        <div id= "directory"></div>  
-
+        <div id="viewDiv">
+            <input type="button" value="&#9783; Grid" id="grid" onclick="gridView();">
+          <input type="button" value="&#9776; List" id="list" onclick="listView();">
+          
+        </div>
+         
+        <div id= "directory"></div>
+       
+            
     <section class="contact-section">
         <h1 id="contact-title">Contact information</h1>
                  
@@ -66,13 +73,11 @@
          
        </main>
         <footer>
-           <p class="footer-text">&copy; <span id="date"></span> |<a class="links" href="index.html">Discover Quito</a> | Ecuador | Michelle Gutiérrez </p>  
+          <p class="footer-text">&copy; <span id="date"></span> |<a class="links" href="index.html">Discover Quito</a> | Ecuador | Michelle Gutiérrez </p>  
         </footer>
         <script src="JS/directory.js"> </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script>
-             WebFont.load({ google: { families: ['Merriweather Sans, Source Sans Pro ']}});
-        </script>
+        <script src="JS/script.js"> </script>
+       
            
                  
                

@@ -1,4 +1,17 @@
+// Last Update
+const months = ["January", "February", "March","April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const currentDate = new Date()
+let actualDate = weekdays[currentDate.getDay()] + ", " + currentDate.getDate() + " " + months[currentDate.getMonth()] + " " + currentDate.getFullYear()
+document.getElementById("date").innerHTML = actualDate;
 
+
+
+let weekDay =  currentDate.getDay();
+let element = document.getElementById('friday-banner');
+if (weekDay == 5) {
+    element.style.display = "block";
+}
 
 // Menu
 function toggleMenu(){
@@ -90,7 +103,7 @@ function showSlides() {
    
   });
 
-
+ //DIRECTORY JSON
   const businessURl = "business.json"
   fetch(businessURl)
   .then(function (response) {
@@ -109,6 +122,7 @@ function showSlides() {
     let h3 = document.createElement("h3");
     let information = document.createElement("p");
     let images = document.createElement("img");
+   
     //Call JSON information for HOME PAGE
     h3.innerHTML = business[i].businessName;
     information.innerHTML =  business[i].info;
@@ -127,17 +141,5 @@ function showSlides() {
 
 });
 
-
-function ShowSelected()
-{
-/* Para obtener el valor */
-var cod = document.getElementById("membership").value;
-alert(cod);
- 
-/* Para obtener el texto */
-var combo = document.getElementById("membership");
-var selected = combo.options[combo.selectedIndex].text;
-alert(selected);
-}
 
 

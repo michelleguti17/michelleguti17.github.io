@@ -33,20 +33,71 @@
 
     <main>        
         <h1 class=title-page>Join Us</h1>
+        <div class = "levels">
+              
+            <div class= "non-profit">
+                <h2>Memberships</h2>
+                <h3>Non-Profit Level &nbsp; ($100)</h3>
+                
+                <ul>
+                    <li>Company and website linked to discover-quito.com</li>
+                    <li>Access to more than 2,000 business professionals</li>
+                    <li>Opportunity to offer discounts to fellow Discover Quito members</li>
+                    <li>Business Promotion in our social media once a month</li>
+                    <li>Discounted pricing for all Chamber events</li>
+                    
+                </ul>
+            </div>    
+            <div class= "bronze">
+                
+            <h3>Bronze Level&nbsp;($200)</h3>
+            <ul>
+                <li>All benefits included in Non-Profit level</li>
+                <li>Opportunity to host a workshop promoted to Chamber members</li>
+                <li>Business Promotion in our social media twice a month</li>
+                <li>One month ad free advertisement in www.discover-quito.com</li>
+                <li>A Personal business training sesion per month</li>
+            </ul>
+            </div>
+            <div class= "silver">
+            <h3>Silver Level  &nbsp;($400)</h3>
+            <ul>
+                <li>All benefits included in Non-Profit and Bronze levels</li>
+                <li>One email ad campaign emailed to 2,000+ member contacts</li>
+                <li>Three month ad free advertisement in www.discover-quito.com</li>
+                <li>Four complimentary tickets per year to in-person CEO Series events</li>
+                <li>A Personal business training sesion with the Chamber's President</li>
+                <li>Business Promotion in our social media weekly</li>
+            </ul>
+             </div>
+            <div class= "gold">  
+            <h3>Gold Level  &nbsp; ($1000)</h3>
+            <ul>
+                <li>All benefits included in Non-Profit, Bronze, and Sivler levels</li>
+                <li>A strategy session with Discover Quito staff to set membership expectations for the year</li>
+                <li>Business Promotion in our social media daily</li>
+                <li>Opportunity to be interviewed for Inside Corporate Discover Quito Video Series</li>
+                <li>Invitation to our networking exclusive Event</li>
+                <li>Access to all our businesses database</li>
+            </ul>
+            </div>
+             </div>
+            
         <form action = "thank-you.html">
         <div class = "form">
         <fieldset>
             <div class="form-input">
                 <h2 class="contact-title">Contact Information</h2>
-                <label for="name">First Name*:<input class="form-data" type="text" id="first-name" name="name" minlength="5" maxlength="50" size="30" required="" pattern="[A-Z][A-Za-z' -]+"></label> </br>
-                <label for="name">Last Name*:<input class="form-data" type="text" id="name" name="name"  maxlength="50" size="30" required="" pattern="[A-Z][A-Za-z' -]+"></label> </br>
-                <label for="title">Title:<input class= "form-data" type="text" id="title-form" name="title"  minlength="5" maxlength="10" size="30"></label></br>   
+               
+                <label for="name">First Name*:<input class="form-data" type="text" id="first-name" name="First name" minlength="5" maxlength="50" size="30" required="" pattern="[A-Z][A-Za-z' -]+"></label> </br>
+                <label for="name">Last Name*:<input class="form-data" type="text" id="las-name" name="Last name" minlength="5" maxlength="50" size="30" required="" pattern="[A-Z][A-Za-z' -]+"></label> </br>
+                <label for="title">Title:<input class= "form-data" type="text" id="title-form" name="title"  minlength="0" maxlength="10" size="30"></label></br>   
                 <label for="email">Email:<input class="form-data" type="email" id="email" name="email" placeholder="address@domain.com" size="30"></label></br>
                 <label for="phone">Phone:<input   class="form-data" type="tel" id="telephone" name="tel" required="" minlength="10" size="30"></label></br>
             </div>  
             
             <div class= "form-input">
-                <label for="busines-name">Business Name:*<input class= "form-data" type="text" id="busines-name" name="busines-name"  minlength="5" maxlength="50" size="30"  required="" pattern="[A-Z][A-Za-z' -]+"></label></br>   
+                <label for="busines-name">Business Name:*<input class= "form-data" type="text" id="busines-name" name="busines-name"  minlength="0" maxlength="50" size="30"  required="" pattern="[A-Z][A-Za-z' -]+"></label></br>   
                 <label for="busines-address">Business Address:<input class= "form-data" type="text" id="busines-address" name="busines-address"  minlength="5" maxlength="50" size="30"></label></br>   
                 <label for="busines-email">Business Email:<input class= "form-data" type="text" id="busines-email" name="busines-email"  placeholder="address@domain.com" minlength="5" maxlength="50" size="30"></label></br>   
                <p>Business Description:</p> <textarea id="comment" name="message" maxlength="500"></textarea>
@@ -61,12 +112,25 @@
                 <option value="Gold">Gold ($1000)</option>
             </select>
             </div>
-            <input class="button" type="submit" value="Submit">
+            <input class="button-join" type="submit" value="Join">
         </fieldset>
         </div>
         </form>
+
+
+
+        
+       
+         
+       
+        
+        
+         
+        
+        
+
         <section class="contact-section">
-            <h1 id="contact-title">Contact information</h1>
+          
                      
             <div class="contact">
                            
@@ -94,16 +158,15 @@
                           
            </section>
              
+
+
+
            </main>
             <footer>
                <p class="footer-text">&copy; <span id="date"></span> |<a class="links" href="index.html">Discover Quito</a> | Ecuador | Michelle Gutiérrez </p>  
             </footer>
              <script src="JS/script.js"> </script>
-             <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-             <script>
-                 WebFont.load({ google: { families: ['Merriweather Sans, Source Sans Pro ']}});
-             
-             </script>
+            
                
                      
                    
