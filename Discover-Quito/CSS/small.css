@@ -289,12 +289,12 @@ margin-top: 2em;
   height:35px;
   text-align: center;
   font-family: 'Playfair Display', serif;
-  align-items: center;
+
   position: absolute;
   border:none;
- 
+ display: block;
   box-shadow: 3px 3px 4px #293c5a;
-
+   max-width: 100%;
   
 }
 #index-button:hover{
@@ -384,7 +384,7 @@ width: 48px;
   font-family: 'EB Garamond', serif;
  justify-content: center;
  font-size: 18px;
- 
+ margin-top: -0.5em;
 }
 
 footer{
@@ -393,9 +393,7 @@ footer{
   font-size: 18px;
 }
 /*CITY*/
-.info-quito{
-  position: relative;
-}
+
 
 
 /*JOIN US*/   /*FORM AND THANK YOU PAGE*/  
@@ -752,6 +750,7 @@ background-color: #fafafa;
  margin-top: 2em;
   box-shadow: 8px 8px 4px #7e9dcf;
   text-align: center;
+  max-width:100%;
 }
 .events {
   background-color: #fafafa;
@@ -759,6 +758,7 @@ background-color: #fafafa;
   color: #003399;
   font-family: 'EB Garamond', serif;
    font-weight: 500;
+
 }
 #form-contact{
   
