@@ -45,19 +45,19 @@
       #current  {
       
  
-        width:600px;
+        width:580px;
         margin-top: 2em;
       }
       
       
       #chamber-img{
-        
+       margin-top: 0;
        width: 600px;
        height: 500px;
-      margin: 0 auto;
-      justify-content: right;
+       position: relative;
+       
       float:right;
-     position: absolute;
+   
       }
      #chamber-home{
       margin-top: 2em;
@@ -67,12 +67,14 @@
    
         
      }
+
+   
       #chamber-description{
         top:0;
         left:0;
         right:0;
-        bottom:0;
-        margin: auto;
+        bottom:0%;
+        margin:auto;
         position: absolute;
          text-align: center;
          color:#043869;
@@ -84,10 +86,10 @@
       }
 
     .button{
-      top:0;
+      top:25%;
       left:0;
       right:0;
-      bottom:-10em;
+      bottom:0;
       position: absolute;
       
       padding:10px;

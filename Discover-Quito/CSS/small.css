@@ -263,7 +263,7 @@ main{
   bottom: 0;
   margin: 0 auto;
   position: absolute;
-margin-top: -1em;
+margin-top: 2em;
  
   font-size: 16px;
   padding:10px;
@@ -272,6 +272,9 @@ margin-top: -1em;
   font-family: 'EB Garamond', serif;
   color: #003399; 
   max-width:100%;
+}
+.weather-title{
+  margin-top: 10em;
 }
 .forecast{
   top: 0;
@@ -282,7 +285,7 @@ margin-top: -1em;
   position: absolute;
   display: flex;
   justify-content: center;
-  margin-top: 14em;
+  margin-top: 18em;
   font-family: 'EB Garamond', serif;
   font-weight: 500;
 
@@ -330,7 +333,11 @@ margin-top: -1em;
 }
 
 .button{
-  display: flex;
+  top: 41%;
+  left: 0;
+  right: 60%;
+  bottom: 0;
+  margin:  auto; 
 
   background-color: #df1620;
 
@@ -344,9 +351,7 @@ margin-top: -1em;
   align-items: center;
   position: absolute;
   border:none;
-  justify-content: left;
-  margin-top: -17em;
-  margin-left: 2em;
+ 
   box-shadow: 3px 3px 4px #293c5a;
 
   
