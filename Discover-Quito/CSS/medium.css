@@ -99,9 +99,6 @@
       
       }
     
-      #company-section ,.board {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
+   
+      
 }
