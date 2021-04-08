@@ -680,14 +680,15 @@ font-weight: 500;
 }
 
 #demo-list{
-background-color: #fafafa;
+
 list-style-type: none;
-color: #04142D;
+color: #fafafa;
 padding:20px;
 width:320px;
 max-width: 100%;
 justify-items: center;
 margin: 0 auto;
+
 }
 
 #demographics h2{
