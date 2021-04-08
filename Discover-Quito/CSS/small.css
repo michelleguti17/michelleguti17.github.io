@@ -649,7 +649,7 @@ font-weight: 500;
  }
 
  .info-quito{
-  font-size: 18px;
+  font-size: 20px;
   margin: 0 auto;
   margin-top: 2em;
    width:400px;
@@ -780,6 +780,7 @@ background-color: #fafafa;
   width:400px;
    max-width:100% ;
    font-family: 'EB Garamond', serif;
+   font-size: 20px;
   color :#fafafa;
   background-image: linear-gradient( 135deg, #003399 20%, #011e60 80%);
   box-shadow: 8px 8px 4px #7e9dcf;
