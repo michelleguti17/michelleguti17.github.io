@@ -274,15 +274,15 @@ margin-top: 2em;
 }
 
 .button{
-  top: 30%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin:  auto; 
-
+  top:20%;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+   margin-top: 7em;
   background-color: #df1620;
 
-  padding:10px;
+  padding:5px;
    font-size: 14px;
  
   color: #fafafa;
@@ -292,7 +292,7 @@ margin-top: 2em;
 
   position: absolute;
   border:none;
- display: block;
+
   box-shadow: 3px 3px 4px #293c5a;
    max-width: 100%;
   
@@ -302,6 +302,9 @@ margin-top: 2em;
     color: #fafafa;
 
 }
+
+.button-i{
+  display: block;}
 #chamber-description{
   top:0;
   left:0;
@@ -318,9 +321,10 @@ text-align: center;
   opacity: .9;
   font-size: 12px;
   width:300px;
-  height:300px;
+ 
  font-weight: 500;
   max-width:100%;
+
   padding: 5px;
   font-family: 'EB Garamond', serif;
   height: 125px;
