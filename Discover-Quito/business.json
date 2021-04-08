@@ -7,7 +7,7 @@
         "adress":"Matriz: Av. Amazonas y República, Edificio Las Cámaras ",
         "phone": "(02) 976 500",
         "email": "ccq@lacamaradequito.coms",
-        "website":"https://ccq.ec/"
+        "websites":"https://ccq.ec/"
     },
    {
         "logo": "images/multicinesLogo.png", 
@@ -16,7 +16,7 @@
         "adress":"Av República s/n y NNUU Plaza de Las Américas",
         "phone": "593(02)605-0683",
         "email": "sugerencias@multicines.com.ec",
-        "website":"https://www.multicines.com.ec/"
+        "websites":"https://www.multicines.com.ec/"
     },
     {
         "logo": "images/mitadLogo.jpg",
@@ -25,7 +25,7 @@
         "adress":"Av. Manuel Cordova Galarza Km13 1/2 Quito",
         "phone": "593(02)239-4803",
         "email": "info@mitaddelmundo.com",
-        "website":"http://www.mitaddelmundo.com"
+        "websites":"http://www.mitaddelmundo.com"
     },
     {
         "logo": "images/quitoBusLogo.png",
@@ -34,7 +34,7 @@
         "adress":"Av. Shyris y Av. Naciones Unidas",
         "phone": "593(09)842-58148",
         "email": "recursoshumanos@quindetour.com",
-        "website":"http://www.quitotourbus.com"
+        "websites":"http://www.quitotourbus.com"
     },
     {
         "logo": "images/teatroSucreLogo.png",
@@ -43,7 +43,7 @@
         "adress":"Manabí N8 - 1431 Entre Guayaquil Y Flores",
         "phone": "593(02)398-0760",
         "email": "comunicacion@teatrosucre.com",
-        "website":"https://www.teatrosucre.com/escenario/teatro-nacional-sucre"
+        "websites":"https://www.teatrosucre.com/escenario/teatro-nacional-sucre"
     },
     {
         "logo": "images/corunaLogo.png",
@@ -52,7 +52,7 @@
         "adress":"Av. Francisco de Orellana E12-113 y San Ignacio, 170517",
         "phone": "0998044627",
         "email": "daraujo@lacoruna.com.ec",
-        "website":"https://lacoruna.com.ec/"
+        "websites":"https://lacoruna.com.ec/"
     },
     {
         "logo": "images/plazaHLogo.jpg",
@@ -61,7 +61,7 @@
         "adress":"Calle Garcia Moreno Y Chile",
         "phone": "593(02)251-0777",
         "email": "recepcion@plazagrandequito.com",
-        "website":"http://www.plazagrandequito.com"
+        "websites":"http://www.plazagrandequito.com"
     },
     {
         "logo": "images/explocenLogo.png",
@@ -70,7 +70,7 @@
         "adress":"Av. Coruña E25-58 y 12 de Octubre, Edificio Altana plaza 6to piso",
         "phone": " (02)3230-492",
         "email": "museopedrogocial@hotmail.com",
-        "website":"https://www.explocen.com.ec/"
+        "websites":"https://www.explocen.com.ec/"
     },
     {
         "logo": "images/mrbooksLogo.jpg",
@@ -79,7 +79,7 @@
         "adress":"Av.Amazonas N6-114 Y República ",
         "phone": "(02)2980277",
         "email": "marketing@mrbooks.com",
-        "website":"www.mrbooks.com"
+        "websites":"www.mrbooks.com"
     }
     ]
 }

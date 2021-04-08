@@ -22,23 +22,23 @@ fetch(directoryURl)
     let email = document.createElement("p");
     let website =document.createElement("p");
     directoryBusiness.setAttribute("class","div-companies");
-    
-    descriptionBusiness.setAttribute("class","description");
+    website.setAttribute("class","link");   
+    infoBusiness.setAttribute("class","description");
     h2.setAttribute("class","business-title");
     phone.setAttribute("class","phone");
     email.setAttribute("class","email");   
-    website.setAttribute("class","website");      
+      
     
 
     //Call JSON information for Directory Page
-    website.setAttribute('href', business[i].website);
+    website.innerHTML = "<a href=" + `${business[i].websites}` + ">" + `${business[i].websites}`;
     image.setAttribute('src', business[i].logo);
     image.setAttribute('alt', business[i].businessName + " logo");
     h2.innerHTML = business[i].businessName;
     descriptionBusiness.innerHTML =  business[i].info;
     phone.innerHTML =  business[i].phone;
     email.innerHTML =  business[i].email;
-    website.innerHTML =  business[i].website;
+    
     
     directoryBusiness.append(infoBusiness);
     directoryBusiness.append(image);
@@ -53,16 +53,16 @@ fetch(directoryURl)
 
 });
 
-const listViewButton = document.querySelector('.list-view-button');
-const gridViewButton = document.querySelector('.grid-view-button');
-const list = document.querySelector('ol');
+const list = document.querySelector('.list-button');
+const grid = document.querySelector('.grid-button');
+const directoryView = document.querySelector('ol');
 
-listViewButton.onclick = function () {
-  list.classList.remove('grid-view-filter');
-  list.classList.add('list-view-filter');
+list.onclick = function () {
+  directoryView.classList.remove('grid-view-filter');
+  directoryView.classList.add('list-view-filter');
 }
 
-gridViewButton.onclick = function () {
-  list.classList.remove('list-view-filter');
-  list.classList.add('grid-view-filter');
+grid.onclick = function () {
+  directoryView.classList.remove('list-view-filter');
+  directoryView.classList.add('grid-view-filter');
 }
