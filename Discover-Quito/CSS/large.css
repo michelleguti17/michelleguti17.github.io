@@ -45,11 +45,11 @@
         justify-content: space-around;
       }
       #current  {
- 
-        margin-left:2em;
-          width:600px;
+        
+        margin-left:1em;
+          width:580px;
         margin-top: 2em;
-        position: relative;
+       
       }
       
       
@@ -57,7 +57,7 @@
        margin-top: 0;
        width:600px;
        height: 500px;
-       position: relative;
+       
        
       float:right;
    
@@ -66,7 +66,7 @@
       margin-top: 2em;
       float: right;
       position: relative;
-     margin-right:2em;
+     margin-right:1em;
      width:600px;
      max-width: 100%;
         
