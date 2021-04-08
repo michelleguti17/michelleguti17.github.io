@@ -85,7 +85,14 @@
         transition: 0.3s;
       }
       
-      
+      #chamber-home{
+        margin-top: 2em;
+     
+      width:800px;
+      max-width: 100%;;
+      margin: 0 auto;
+          
+       }
       
       
       .directoryView.list-view-filter div {

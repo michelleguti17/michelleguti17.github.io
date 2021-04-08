@@ -45,16 +45,17 @@
         justify-content: space-around;
       }
       #current  {
-      
-        margin-left:2em;
-        width:580px;
+ 
+        margin-left:6em;
+          width:600px;
         margin-top: 2em;
+        position: relative;
       }
       
       
       #chamber-img{
        margin-top: 0;
-       width: 800px;
+       width:600px;
        height: 500px;
        position: relative;
        
@@ -64,10 +65,10 @@
      #chamber-home{
       margin-top: 2em;
       float: right;
-     position: relative;
-     margin-right:2em;
-   
-   
+      position: relative;
+     margin-right:6em;
+     width:600px;
+     max-width: 100%;
         
      }
 
@@ -98,6 +99,10 @@
       padding:10px;
       margin: auto;
       
+    }
+
+    .index-events {
+    float: none;
     }
     .contact-group{
       top: 0;
