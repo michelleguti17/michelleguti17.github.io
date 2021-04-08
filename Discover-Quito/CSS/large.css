@@ -43,55 +43,56 @@
         justify-content: space-around;
       }
       #current  {
-       
       
+ 
         width:600px;
         margin-top: 2em;
       }
-
-      .events{
-        position: relative;
-        float: right;
-        width:600px;
-        font-size: 18px;
-      }
+      
       
       #chamber-img{
-        height:650px;
-       width: 100%;
-      margin: 0 auto;
-      }
-
-      #chamber-description{
-   
-        position: absolute;
         
+       width: 600px;
+       height: 500px;
+      margin: 0 auto;
+      justify-content: right;
+      float:right;
+     position: absolute;
+      }
+     #chamber-home{
+      margin-top: 2em;
+      float: right;
+     position: relative;
+   
+   
+        
+     }
+      #chamber-description{
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin: auto;
+        position: absolute;
+         text-align: center;
          color:#043869;
          opacity: .92;
          font-size: 18px;
-         width:300px;
-         height: 200px;
+         width:400px;
+         height: 220px;
          padding: 10px;
       }
 
     .button{
-      display: flex;
-  
-      background-color: #04142D;
-      padding:10px;
-      margin: 0 auto;
-      opacity: .9;
-      color: #fafafa;
-      height:40px;
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      align-items: center;
+      top:0;
+      left:0;
+      right:0;
+      bottom:-10em;
       position: absolute;
-      border: 2px double #04142D;
-      justify-content: left;
-      margin-top: -16em;
-       right: 30px;
-      box-shadow: 1px 1px 4px #293c5a;
+      
+      padding:10px;
+      margin: auto;
+      
     }
     .contact-group{
       top: 0;
@@ -99,8 +100,9 @@
   right: 0;
   bottom: 0;
   margin: auto;
-      
     }
+     
+    
     #instagram{
       margin-left: -0.3em;
     }
@@ -127,24 +129,13 @@ footer{
 
 
 
-#grid{
-  margin-left:20px;
-}
-#directory{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+
+.directory img{
+   width:200px;
+   max-width: 100%;
 }
 
-/*.board{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows:1fr 1fr ;
-  float:right;
-  margin-top: -1em;
-  margin-right: 1em;
- 
-}*/
+
 .title-board{
   text-align: center;
   
@@ -163,12 +154,83 @@ footer{
 
 }
 
-
+form{
+  margin-left: 2em;
+}
 picture{
   padding:0px;
 }
-
+/*CITY */
+.city-content{
+display: flex;
+}
 .info-quito{
+  margin-top: -18em;
   margin-left: 4em;
 }
+.quito-article {
+ float:right;
+margin-right: 4em;
+
+}
+.events-city{
+  margin-right: 4em;
+}
+
+.m-direct{
+  position: relative;
+}
+.filter-buttons {
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.list-view-button,
+.grid-view-button {
+  display: inline;
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+
+}
+
+.list-view-button:hover,
+.grid-view-button:hover {
+  background: white;
+  color: #0e2439;
+}
+
+.list-view-button {
+  margin-right: 10px;
+}
+
+
+
+li {
+ 
+  border-radius: 3px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+
+
+/*.list.grid-view-filter {
+  flex-flow: column;
+}*/
+.list.list-view-filter div {
+  display: block;
+}
+
+.directory{
+  display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+width:850px;
+}
+
 }

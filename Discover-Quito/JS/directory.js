@@ -15,8 +15,6 @@ fetch(directoryURl)
      //Create Elements in HTML for Directory Page
     let directoryBusiness = document.createElement("div");
     let infoBusiness = document.createElement("div");
-    directoryBusiness.setAttribute("id","business" + i);
-    directoryBusiness.setAttribute("class","business");
     let image = document.createElement("img");
     let h2 = document.createElement("h2");
     let descriptionBusiness = document.createElement("p");
@@ -49,9 +47,22 @@ fetch(directoryURl)
     infoBusiness.append(phone);
     infoBusiness.append(email);
     infoBusiness.append(website);
-    document.getElementById("directory").appendChild(directoryBusiness);
+    document.querySelector(".directory").appendChild(directoryBusiness);
    
   }
 
 });
 
+const listViewButton = document.querySelector('.list-view-button');
+const gridViewButton = document.querySelector('.grid-view-button');
+const list = document.querySelector('ol');
+
+listViewButton.onclick = function () {
+  list.classList.remove('grid-view-filter');
+  list.classList.add('list-view-filter');
+}
+
+gridViewButton.onclick = function () {
+  list.classList.remove('list-view-filter');
+  list.classList.add('grid-view-filter');
+}

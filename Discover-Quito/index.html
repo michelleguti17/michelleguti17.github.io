@@ -57,7 +57,7 @@
 <nav >
         <button onclick="toggleMenu()">&#9776</button>
         <ul id="primaryNav" class="hide">
-        <li class="active"><a href="index.html">Home</a></li>
+        <li ><a href="index.html">Home</a></li>
         <li><a href="city.html">City</a></li>
         <li ><a href="joinUs.html">Join Us</a></li>
         <li><a href="directory.html">Directory</a></li>
@@ -70,13 +70,17 @@
 
 <main class="index">
     
-  <div id= "company-section"></div>  
-  <section class = "events">
-    <h1 class= "events-title">Upcoming Events</h1>
-    <p>April 7: Políticamente incorrecto</p>
-    <p> April 13-14: Economic Master Class</p>
-    <p> April 17: Cultural Festival 2021 </p>
-    <p> April 22: Conversation "Finances for Small Business"</p>
+  <div id= "company-section"></div>
+  <section id= "chamber-home">
+    <img id= "chamber-img" src = "images/chamber.jpg" alt= "people clashing fists ">  
+    
+    <div id="chamber-description">
+      <p>Join our chamber that will help you to build your professional networks, know more about the city, have access to unique business events. In addition, get access to a wide range of business support to help grow your business.</p>
+    </div>
+     
+    <form action="joinUs.html">
+    <input id= "index-button"class="button" type="submit" value= "Join our chamber" >
+  </form>
   </section>      
   
   <div id="current">
@@ -117,18 +121,21 @@
     </div>
   </div>
 </div>
-     
+<div class= "index-events">
+  <section class = "events">
+    
+    <h1 class= "events-title">Upcoming Events</h1>
+    <p>April 7: Políticamente incorrecto</p>
+    <p> April 13-14: Economic Master Class</p>
+    <p> April 17: Cultural Festival 2021 </p>
+    <p> April 22: Conversation "Finances for Small Business"</p>
+  </section>      
+</div>
         
      
                     
     
-     <section id= "chamber-home">
-       <img id= "chamber-img" src = "images/turismo-en-quito-el-panecillo.jpg" alt= "Quito Panecillo monumentos">  
-       <input class="button" type="submit" value= "Join our chamber">
-       <div id="chamber-description">
-         <p>Join our chamber that will help you to build your professional networks, know more about the city, have access to unique business events. In addition, get access to a wide range of business support to help grow your business.</p>
-       </div>
-     </section>      
+    
    
     <section class="contact-section">
     
@@ -141,7 +148,7 @@
       </div>
       <div class= "contact-group">
       <img class="contact-icons" src="images/001-tablet.png" alt="telephone-icon">
-      <p>593-655-433</p>
+      <p>1800 - (593)- 983 -665593 </p>
       </div>
       <div class= "contact-group">
       <img class="contact-icons" src="images/email us.png" alt="email-icon" >

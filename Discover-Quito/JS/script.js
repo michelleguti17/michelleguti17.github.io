@@ -103,7 +103,7 @@ function showSlides() {
    
   });
 
- //DIRECTORY JSON
+ //HOME JSON
   const businessURl = "business.json"
   fetch(businessURl)
   .then(function (response) {
