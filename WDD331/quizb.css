@@ -1,0 +1,27 @@
+fieldset[title=fieldset2] > p + p{
+    color: red;
+}
+
+fieldset:nth-of-type(2) >p + p{
+    color:purple;
+}
+
+
+.help::before{
+    content: "(";
+    
+}
+
+.help::after{
+    content: ")";
+   
+}
+
+fieldset p:nth-of-type(n+3){
+   display: none;
+}
+
+span.help{
+   font-family: Arial, Helvetica, sans-serif;
+   color : green;
+}

@@ -1,158 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discover Quito Home</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="iamges/favicon.ico" type="image/x-icon">
-<meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="CSS/small.css"/>
-    <link rel="stylesheet" href="CSS/medium.css"/>
-    <link rel="stylesheet" href="CSS/large.css"/>
-    <link rel="stylesheet" href="CSS/normalize.css"/>
- 
-</head>
-<body>
- 
-    
-  
-  
-  <div class="slides">
-   
-   
-    <div>
-      <img class="img-gallery" src="images/montanasquito.jpg" alt="Rucu Pichincha mountains Quito">
-      
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="iamges/favicon.ico" type="image/x-icon" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="CSS/small.css" />
+    <link rel="stylesheet" href="CSS/medium.css" />
+    <link rel="stylesheet" href="CSS/large.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+  </head>
+  <body>
+    <div class="slides">
+      <div>
+        <img
+          class="img-gallery"
+          src="images/montanasquito.jpg"
+          alt="Rucu Pichincha mountains Quito"
+        />
+      </div>
     </div>
-  
-    
-  
-  </div>
- 
-  <header class="clearfix"> 
-    <img src="images/DQLOGO@4x.png" alt="logo" srcset="images/DQLOGO@4x.png" >     
-  </header>
-<nav >
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="primaryNav" class="hide">
-        <li ><a href="index.html">Home</a></li>
+
+    <header class="clearfix">
+      <img
+        src="images/DQLOGO@4x.png"
+        alt="logo"
+        srcset="images/DQLOGO@4x.png"
+      />
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
         <li><a href="city.html">City</a></li>
-        <li ><a href="joinUs.html">Join Us</a></li>
+        <li><a href="joinUs.html">Join Us</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="contactUs.html">Contact Us </a></li>
-        </ul>
-</nav>
+      </ul>
+    </nav>
 
+    <main class="index">
+      <div id="company-section"></div>
+      <div class="float-section">
+        <section id="chamber-home">
+          <img
+            id="chamber-img"
+            src="images/chamber.jpg"
+            alt="people clashing fists "
+          />
 
+          <div id="chamber-description">
+            <p>
+              Join our chamber that will help you to build your professional
+              networks, know more about the city, have access to unique business
+              events. In addition, get access to a wide range of business
+              support to help grow your business.
+            </p>
+          </div>
 
+          <form class="button-i" action="joinUs.html">
+            <input
+              id="index-button"
+              class="button"
+              type="submit"
+              value="Join our chamber"
+            />
+          </form>
+        </section>
 
-<main class="index">
-    
-  <div id= "company-section"></div>
-  <div class = "float-section">
-  <section id= "chamber-home">
-    <img id= "chamber-img" src = "images/chamber.jpg" alt= "people clashing fists ">  
-    
-    <div id="chamber-description">
-      <p>Join our chamber that will help you to build your professional networks, know more about the city, have access to unique business events. In addition, get access to a wide range of business support to help grow your business.</p>
-    </div>
-     
-    <form class="button-i" action="joinUs.html">
-    <input id= "index-button" class="button" type="submit" value= "Join our chamber" >
-  </form>
-  </section>      
-  
-  <div id="current">
-    <img id= "currentPhoto" src= "images/quitoLandscape.jpg" alt= "Quito City Landscape">
-<div class="current-weather">
-  
-    <h2 class="weather-summary">Weather Summary</h2>
-    <p>Currently : &nbsp;<span id="current-2"></span>&nbsp;&nbsp;/&nbsp;<span id="current-temp"></span>&deg;F</p>
-    <p>Description:&nbsp;<span id="description"></span></p>
-    <p>Humidity:&nbsp;<span id="humidity"></span>%</p>
-   
-</div>
+        <div id="current">
+          <img
+            id="currentPhoto"
+            src="images/quitoLandscape.jpg"
+            alt="Quito City Landscape"
+          />
+          <div class="current-weather">
+            <h2 class="weather-summary">Weather Summary</h2>
+            <p>
+              Currently : &nbsp;<span id="current-2"></span
+              >&nbsp;&nbsp;/&nbsp;<span id="current-temp"></span>&deg;F
+            </p>
+            <p>Description:&nbsp;<span id="description"></span></p>
+            <p>Humidity:&nbsp;<span id="humidity"></span>%</p>
+          </div>
 
-<h2 class="weather-title">Three Day Forecast</h2>
+          <h2 class="weather-title">Three Day Forecast</h2>
 
-<div class="forecast">
+          <div class="forecast">
+            <div class="forecast-day">
+              <h3><span id="dayofWeek1"></span></h3>
+              <img src="" alt="" id="icon1" />
+              <h4><span id="fiveDayForecast1"></span>&deg;F</h4>
+            </div>
 
-  
-
-    <div class="forecast-day">
-     
-      
-     <h3 ><span id="dayofWeek1"></span></h3>
-     <img src="" alt="" id="icon1"> 
-     <h4><span id="fiveDayForecast1"></span>&deg;F</h4>
-     </div>
-
-     <div class="forecast-day">
-     <h3 ><span id="dayofWeek2"></span></h3>
-     <img src="" alt="" id="icon2"> 
-     <h4 >  <span id="fiveDayForecast2"></span>&deg;F</h4>
-     </div>
-     <div class="forecast-day">
-     <h3 ><span id="dayofWeek3"></span></h3>
-     <img src="" alt="" id="icon3"> 
-     <h4><span id="fiveDayForecast3"></span>&deg;F</h4>
- 
-    </div>
-  </div>
-</div>
-</div>
-<div class= "index-events">
-  <section class = "events">
-    
-    <h1 class= "events-title">Upcoming Events</h1>
-    <p>April 7: Políticamente incorrecto</p>
-    <p> April 13-14: Economic Master Class</p>
-    <p> April 17: Cultural Festival 2021 </p>
-    <p> April 22: Conversation "Finances for Small Business"</p>
-  </section>      
-</div>
-        
-     
-                    
-    
-    
-   
-    <section class="contact-section">
-    
-              
-     <div class="contact">
-                    
-      <div class= "contact-group">
-      <img class="contact-icons" src="images/map.png" alt="location-icon">
-      <p >Cuenca 477, Quito 170401</p> 
+            <div class="forecast-day">
+              <h3><span id="dayofWeek2"></span></h3>
+              <img src="" alt="" id="icon2" />
+              <h4><span id="fiveDayForecast2"></span>&deg;F</h4>
+            </div>
+            <div class="forecast-day">
+              <h3><span id="dayofWeek3"></span></h3>
+              <img src="" alt="" id="icon3" />
+              <h4><span id="fiveDayForecast3"></span>&deg;F</h4>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class= "contact-group">
-      <img class="contact-icons" src="images/001-tablet.png" alt="telephone-icon">
-      <p>1800 - (593)- 983 -665593 </p>
+      <div class="index-events">
+        <section class="events">
+          <h1 class="events-title">Upcoming Events</h1>
+          <p>April 7: Políticamente incorrecto</p>
+          <p>April 13-14: Economic Master Class</p>
+          <p>April 17: Cultural Festival 2021</p>
+          <p>April 22: Conversation "Finances for Small Business"</p>
+        </section>
       </div>
-      <div class= "contact-group">
-      <img class="contact-icons" src="images/emailus.png" alt="email-icon" >
-      <p> discover-quito@info.com</p>
-      </div>
-      <div class= "contact-group">
-      <a href="https://www.facebook.com/" >
-      <img id="facebook" src= "images/facebookicon.png" alt="Facebook Icon"></a>
-      <a href="https://www.instagram.com/">
-      <img id="instagram" src= "images/instagram.png" alt="Instagram Icon">
-      </a>
-      </div>
-    
-    </div> 
-                   
-    </section>
-      
+
+      <section class="contact-section">
+        <div class="contact">
+          <div class="contact-group">
+            <img
+              class="contact-icons"
+              src="images/map.png"
+              alt="location-icon"
+            />
+            <p>Cuenca 477, Quito 170401</p>
+          </div>
+          <div class="contact-group">
+            <img
+              class="contact-icons"
+              src="images/001-tablet.png"
+              alt="telephone-icon"
+            />
+            <p>1800 - (593)- 983 -665593</p>
+          </div>
+          <div class="contact-group">
+            <img
+              class="contact-icons"
+              src="images/emailus.png"
+              alt="email-icon"
+            />
+            <p>discover-quito@info.com</p>
+          </div>
+          <div class="contact-group">
+            <a href="https://www.facebook.com/">
+              <img
+                id="facebook"
+                src="images/facebookIconCopy.png"
+                alt="Facebook Icon"
+            /></a>
+            <a href="https://www.instagram.com/">
+              <img
+                id="instagram"
+                src="images/instagram.png"
+                alt="Instagram Icon"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
-     <footer>
-      <p class="footer-text">&copy; <span id="date"></span> |<a class="links" href="index.html">Discover Quito</a> | <a class="links" href="attribute.html"> Attributions</a> | Ecuador | Michelle Gutiérrez </p>  
-     </footer>
-      <script src="JS/script.js"> </script>
-              
-            
-        </body>
-        </html>
+    <footer>
+      <p class="footer-text">
+        &copy; <span id="date"></span> |<a class="links" href="index.html"
+          >Discover Quito</a
+        >
+        | <a class="links" href="attribute.html"> Attributions</a> | Ecuador |
+        Michelle Gutiérrez
+      </p>
+    </footer>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

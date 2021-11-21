@@ -1,273 +1,233 @@
-@media only screen and (min-width: 64rem){
+@media only screen and (min-width: 64rem) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 4em;
+    padding: 0;
+    font-size: 22px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    background-color: transparent;
+  }
 
-    
+  nav ul li a {
+    text-align: center;
+    padding: 0.6rem 1rem;
+    font-size: 22px;
+    padding-left: 10px;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-right: 1px solid rgba (0, 0, 0, 0.3);
+    margin: 0 auto;
+  }
 
-    nav{
-        display: flex;
-        justify-content: space-around;
-        margin: 0 auto;
-        margin-top: 4em;
-        padding:0;
-        font-size: 22px;
-    }
-    nav ul {
-        display:flex;
-        justify-content: space-around;
-        width: 900px;
-        background-color: transparent;
-        
-      }
-     
-    
-    
-      nav ul li a {
-        text-align: center;
-        padding: 0.6rem 1rem;
-        font-size: 22px;
-        padding-left: 10px; 
-        border:none;
-        padding: 0.6rem 1rem;
-        border-right: 1px solid rgba (0,0,0,0.3);
-        margin: 0 auto;
-      }
-    
-      nav ul.hide {
-          display: flex;
-      }
-    
-    
-      nav button {display:none;}
-       
-    
-      #company-section ,.board {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      #current  {
- 
-        
-        margin-left:1em;
-          width:600px;
-        margin-top: 2em;
-       
-      }
-      #current-photo{
-       height:500px;
+  nav ul.hide {
+    display: flex;
+  }
 
-      }
-.float-section{
+  nav button {
+    display: none;
+  }
 
-  display: flex;
-  justify-content: center;
-}
-      
-      #chamber-img{
-       margin-top: 0;
-       width:600px;
-       height:500px;
-       max-width: 100%;
-       
-   
-   
-      }
-     #chamber-home{
-   
-   
-      position: relative;
-     margin-right:1em;
-     width:600px;
-     max-width: 100%;
-     margin-top: 2em ;
-        
-     }
+  #company-section,
+  .board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #current {
+    margin-left: 1em;
+    width: 600px;
+    margin-top: 2em;
+  }
+  #current-photo {
+    height: 500px;
+  }
+  .float-section {
+    display: flex;
+    justify-content: center;
+  }
 
-   
-      #chamber-description{
-        top:0;
-        left:0;
-        right:0;
-        bottom:0%;
-        margin:auto;
-        position: absolute;
-         text-align: center;
-         color:#043869;
-         opacity: .92;
-         font-size: 18px;
-         width:400px;
-         height: 220px;
-         padding: 10px;
-      }
+  #chamber-img {
+    margin-top: 0;
+    width: 600px;
+    height: 500px;
+    max-width: 100%;
+  }
+  #chamber-home {
+    position: relative;
+    margin-right: 1em;
+    width: 600px;
+    max-width: 100%;
+    margin-top: 2em;
+  }
 
-    .button{
-      top:25%;
-      left:0;
-      right:0;
-      bottom:0;
-      position: absolute;
-      height:40px;
-      padding:10px;
-      margin: auto;
-      
-    }
- 
-    .contact-group{
-      top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-    }
-     
-    
-    #instagram{
-      margin-left: -0.3em;
-    }
-   
-   .contact{
-     display:flex;
-     justify-content: center;
-     background-color: #04142D;
-     height: 50px;
-     color: #fafafa;
-     padding-top:10px;
-   } 
-footer{
-  margin-top:2em;
-  text-align: center;
-  color:#fafafa;
-}
-.levels{
-  float:right;
-  margin-right:4em;
-  margin-top: 4.4em;
-}
+  #chamber-description {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0%;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    color: #043869;
+    opacity: 0.92;
+    font-size: 18px;
+    width: 400px;
+    height: 220px;
+    padding: 10px;
+  }
 
+  .button {
+    position: absolute;
+    height: 40px;
+    padding: 10px;
+    margin-top: -14em;
+    margin-left: 13.5em;
+  }
 
+  .contact-group {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
 
+  #instagram {
+    margin-left: -0.3em;
+  }
 
+  .contact {
+    display: flex;
+    justify-content: center;
+    background-color: #04142d;
+    height: 50px;
+    color: #fafafa;
+    padding-top: 10px;
+  }
+  footer {
+    margin-top: 2em;
+    text-align: center;
+    color: #fafafa;
+  }
+  .levels {
+    float: right;
+    margin-right: 4em;
+    margin-top: 4.4em;
+  }
 
-.directory img{
-   width:200px;
-   max-width: 100%;
-}
+  .directory img {
+    width: 200px;
+    max-width: 100%;
+  }
 
+  .title-board {
+    text-align: center;
 
-.title-board{
-  text-align: center;
-  
-  margin-top: 2em;
-}
+    margin-top: 2em;
+  }
 
-.title-contact{
-  text-align:center;
- 
- margin-top: 1em;
- }
+  .title-contact {
+    text-align: center;
 
- .contact-form{
-  margin-top: -4em;
-  margin: 0 auto;
+    margin-top: 1em;
+  }
 
-}
+  .contact-form {
+    margin-top: -4em;
+    margin: 0 auto;
+  }
 
-form{
-  margin-left: 2em;
-}
+  form {
+    margin-left: 2em;
+  }
 
-/*CITY */
-.events-city{
- 
-  margin-right:11em;
-  font-size: 16px;
-}
-.city-content{
-display: flex;
-}
-.info-quito{
-  margin-top: -18em;
-  margin-left: 6em;
-  width:500px;
-  
-}
-.quito-article {
- float:right;
-margin-right: 6em;
-font-size: 20px;
-width:500px;
+  /*CITY */
+  .events-city {
+    margin-right: 11em;
+    font-size: 16px;
+  }
+  .city-content {
+    display: flex;
+  }
+  .info-quito {
+    margin-top: -18em;
+    margin-left: 6em;
+    width: 500px;
+  }
+  .quito-article {
+    float: right;
+    margin-right: 6em;
+    font-size: 20px;
+    width: 500px;
+  }
 
-}
+  .m-direct {
+    position: relative;
+  }
 
+  /*DIRECTORY*/
+  .filter-buttons {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 12.5em;
+  }
 
-.m-direct{
-  position: relative;
-}
+  .list-button,
+  .grid-button {
+    display: inline;
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
 
-/*DIRECTORY*/
-.filter-buttons {
-  display: flex;
-  margin-bottom: 20px;
-  position: relative;
-  margin-left: 12.5em;
-}
+  .list-button:hover,
+  .grid-button:hover {
+    background: white;
+    color: #0e2439;
+  }
 
-.list-button,
-.grid-button {
-  display: inline;
-  background-color: red;
-  color: white;
-  border: 1px solid white;
-  padding: 5px;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 3px;
- 
-}
+  .list-button {
+    margin-right: 10px;
+  }
 
-.list-button:hover,
-.grid-button:hover {
-  background: white;
-  color: #0e2439;
-}
+  li {
+    border-radius: 3px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
 
-.list-button {
-  margin-right: 10px;
-}
+  .directoryView.list-view-filter div {
+    display: block;
+  }
 
+  .directory {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 850px;
+    margin: 0 auto;
+  }
 
+  /*CONTACT US*/
+  figcaption {
+    background-color: #fafafa;
+    margin-top: -0.5em;
+  }
 
-li {
- 
-  border-radius: 3px;
-  margin-bottom: 10px;
-  transition: 0.3s;
-}
-
-
-
-
-.directoryView.list-view-filter div {
-  display: block;
-}
-
-.directory{
-  display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-width:850px;
-margin: 0 auto;
-
-}
-
-/*CONTACT US*/
-figcaption{
-background-color: #fafafa;
-margin-top: -0.5em;
-}
-
-picture{
-  margin-top:0.3em;
-  box-shadow: 8px 8px  4px #7e9dcf;
-  padding: 0px;
-  background-color: #fafafa;
-}
+  picture {
+    margin-top: 0.3em;
+    box-shadow: 8px 8px 4px #7e9dcf;
+    padding: 0px;
+    background-color: #fafafa;
+  }
 }

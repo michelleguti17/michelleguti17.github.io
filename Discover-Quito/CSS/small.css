@@ -1,23 +1,27 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-
-/*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Playfair+Display:wght@400;500&display=swap');
-
-body{
-    background-color: #04142D;
-    margin: 0 auto;
-   
-   
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-header img{
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Playfair+Display:wght@400;500&display=swap");
+
+body {
+  background-color: #04142d;
+  margin: 0 auto;
+}
+
+header img {
   width: 128px;
   position: absolute;
-  top:  0;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -25,168 +29,155 @@ header img{
   margin-top: 0.5em;
 }
 
-
-
 /*MENU*/
 
-
-nav button{
-    margin: .2rem 2%;
-    background-color: transparent;
-    border:none;
-    font-size: 1.6rem;
-    color: #fff;
-    font-family: 'EB Garamond', serif;
-    
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: "EB Garamond", serif;
 }
 
-nav{
-   position:absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   margin: auto;
-   background-color:transparent;
-   font-family: 'Playfair Display', serif;
-   font-size: 18px;
-  
-   
-}
-
-nav ul{
+nav {
   position: absolute;
-    list-style-type: none;
-    padding:10px;
-    margin:0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: transparent;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+
+nav ul {
+  position: absolute;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
   background-color: #011e60;
 }
 
-nav ul li a{
-
-    display:block;
-    padding:2.5px;
-    text-decoration: none;
-    color: #fff;
-    border-top:1px solid rgba(0,0,0,0.3);
-   
-
+nav ul li a {
+  display: block;
+  padding: 2.5px;
+  text-decoration: none;
+  color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
-nav ul li.active a{background-color: #043869; color:#fff; opacity: 0.9;}
-
-nav ul li a:hover{
-    
-    color:#FFFFFA ;
-    opacity: 0.9;
-    background-color: #043869;
+nav ul li.active a {
+  background-color: #043869;
+  color: #fff;
+  opacity: 0.9;
 }
 
-nav ul.hide{
-    display:none;
-  
+nav ul li a:hover {
+  color: #fffffa;
+  opacity: 0.9;
+  background-color: #043869;
+}
+
+nav ul.hide {
+  display: none;
 }
 
 /*GALLERY*/
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slides {
- position: relative;
+  position: relative;
   margin: 0 auto;
-
 }
-
 
 /* Hide the images by default */
 .mySlides {
   display: none;
   position: relative;
-  
 }
 .img-gallery {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;;
+  bottom: 0;
   margin: auto;
   position: relative;
-  width: 100%; 
-  opacity: .5;
+  width: 100%;
+  opacity: 0.5;
   margin-top: -5em;
-
-  
-   
-     
 }
 
-
-
 @-webkit-keyframes fade {
-  from {opacity: .6}
-  to {opacity: 1}
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .6}
-  to {opacity: 1}
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
+main {
+  background-image: linear-gradient(115deg, #fafafa 10%, #9ccafd 100%);
 
-
-
-
-main{
-  background-image: linear-gradient( 115deg, #fafafa 10%, #9ccafd 100%);
-  
   margin: 0 auto;
 }
-.index{
+.index {
   margin-top: -2.8em;
-}  
+}
 
-
- #company-section , .board{
+#company-section,
+.board {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 
   font-size: 20px;
-  padding:10px;
+  padding: 10px;
   margin: 0 auto;
   text-align: center;
   margin-top: 2em;
-  font-family: 'EB Garamond', serif;
-  color: #003399; 
-  max-width:100%;
-  font-weight:500;
-  }
-  #company-section img{
-    width:50%;
-    margin: 0 auto;
-    box-shadow: 8px 8px 4px #7e9dcf;
-  }
-  .weather-title{
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    position: absolute;
-  margin-top: 8em;
- 
-  text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: "EB Garamond", serif;
   color: #003399;
-  
+  max-width: 100%;
+  font-weight: 500;
 }
-#current{
+#company-section img {
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 8px 8px 4px #7e9dcf;
+}
+.weather-title {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  margin-top: 8em;
+
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  color: #003399;
+}
+#current {
   position: relative;
 
   margin-top: 2.5em;
-  
- 
 }
-#currentPhoto{
+#currentPhoto {
   top: 0;
   left: 0;
   right: 0;
@@ -194,627 +185,546 @@ main{
   margin: auto;
   position: relative;
   max-width: 100%;
-  opacity: .3;
-  height:500px;
+  opacity: 0.3;
+  height: 500px;
   box-shadow: 3px 3px 4px #293c5a;
 }
-.current-weather{
+.current-weather {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: 0 auto;
   position: absolute;
-margin-top: 2em;
+  margin-top: 2em;
 
   font-size: 16px;
-  padding:10px;
+  padding: 10px;
   text-align: center;
-   font-weight: 500;
-  font-family: 'EB Garamond', serif;
-  color: #003399; 
-  max-width:100%;
+  font-weight: 500;
+  font-family: "EB Garamond", serif;
+  color: #003399;
+  max-width: 100%;
 }
-.weather-title{
+.weather-title {
   margin-top: 10em;
 }
-.forecast{
+.forecast {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  margin:  auto;
+  margin: auto;
   position: absolute;
   display: flex;
   justify-content: center;
   margin-top: 18em;
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
   font-weight: 500;
 
-   
   color: #003399;
-  width:200px;
-  
-
-  
- 
-
-
-  }
- .forecast-day{
-   padding:10px;
- }
-  .forecast-day img{
-   
-    margin: 0 auto;
-  }
-
-
-#company-section img{
-  width:200px;
-  max-width: 100%;
-  
+  width: 200px;
 }
- #chamber-home{
- position: relative;
- width:400px;
-max-width: 100%;
+.forecast-day {
+  padding: 10px;
+}
+.forecast-day img {
+  margin: 0 auto;
+}
 
- 
- }
-
-#chamber-img{
-  
+#company-section img {
+  width: 200px;
+  max-width: 100%;
+}
+#chamber-home {
   position: relative;
-  width:900px;
+  width: 400px;
+  max-width: 100%;
+}
+
+#chamber-img {
+  position: relative;
+  width: 900px;
   max-width: 100%;
   opacity: 0.8 rgb(145, 144, 144);
   margin-top: 2em;
   box-shadow: 3px 3px 4px #293c5a;
-  
 }
 
-.button{
-  top:20%;
-  left:0;
-  right:0;
-  bottom:0;
-  margin:auto;
-   margin-top: 7em;
+.button {
   background-color: #df1620;
 
-  padding:5px;
-   font-size: 14px;
- 
+  padding: 5px;
+  font-size: 14px;
+
   color: #fafafa;
-  height:35px;
+  height: 35px;
   text-align: center;
-  font-family: 'Playfair Display', serif;
-
+  font-family: "Playfair Display", serif;
+  margin-top: -8em;
+  margin-left: 7.5em;
   position: absolute;
-  border:none;
-
+  border: none;
   box-shadow: 3px 3px 4px #293c5a;
-   max-width: 100%;
-  
+  max-width: 100%;
 }
-#index-button:hover{
+#index-button:hover {
   background-color: #011e60;
-    color: #fafafa;
-
+  color: #fafafa;
 }
 
-.button-i{
-  display: block;}
-#chamber-description{
-  top:0;
-  left:0;
-  right:0;
-  bottom:0%;
-  margin:auto;
- 
+.button-i {
+  display: block;
+}
+#chamber-description {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0%;
+  margin: auto;
+
   position: absolute;
-  border-right: 3px solid #04142D;
-  border-color:#043869 #003399 ;
-  background-image: linear-gradient( 115deg, #fafafa 10%, #aebef3 100%);
-  color:#043869;
-text-align: center;
-  opacity: .9;
+  border-right: 3px solid #04142d;
+  border-color: #043869 #003399;
+  background-image: linear-gradient(115deg, #fafafa 10%, #aebef3 100%);
+  color: #043869;
+  text-align: center;
+  opacity: 0.9;
   font-size: 12px;
-  width:300px;
- 
- font-weight: 500;
-  max-width:100%;
+  width: 300px;
+
+  font-weight: 500;
+  max-width: 100%;
 
   padding: 5px;
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
   height: 125px;
   box-shadow: 3px 3px 4px #293c5a;
-  
 }
 
-#contact-title{
+#contact-title {
   margin-top: 2em;
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #043869;
-
-    
-  
 }
 
-a{
+a {
   color: #003399;
   text-decoration: none;
 }
-a:hover{
-  color:#df1620;
+a:hover {
+  color: #df1620;
 }
-.links{
+.links {
   color: #8ab4f7;
 }
 
 .contact {
   margin: 0 auto;
-   height:210px;
- 
- 
+  height: 210px;
+
   color: #043869;
-  font-family:'Source Sans Pro', sans-serif; 
-  margin-top:1em;
-  width:100%;
-
+  font-family: "Source Sans Pro", sans-serif;
+  margin-top: 1em;
+  width: 100%;
 }
 
-.contact img{
+.contact img {
   width: 36px;
-  
 }
-.contact p{
-  margin-left:0.5em;
-  
+.contact p {
+  margin-left: 0.5em;
 }
 
-#instagram{
-padding-left: 10px;   
-width: 48px;
+#instagram {
+  padding-left: 10px;
+  width: 48px;
 }
-
 
 .contact-group {
   display: flex;
   flex-direction: row;
   align-items: center;
- font-weight: 500;
-  font-family: 'EB Garamond', serif;
- justify-content: center;
- font-size: 18px;
- margin-top: -0.5em;
+  font-weight: 500;
+  font-family: "EB Garamond", serif;
+  justify-content: center;
+  font-size: 18px;
+  margin-top: -0.5em;
 }
 
-footer{
-  color:#FFFFFA;
+footer {
+  color: #fffffa;
   text-align: center;
   font-size: 18px;
 }
 /*CITY*/
 
+/*JOIN US*/ /*FORM AND THANK YOU PAGE*/
 
-
-/*JOIN US*/   /*FORM AND THANK YOU PAGE*/  
-
-
-  .title-page{
-    
-  font-family: 'Playfair Display', serif;
-    color: #043869;
-    margin-top: 5em;
-    position: relative;
-    text-align: center;
-    padding: 20px;
+.title-page {
+  font-family: "Playfair Display", serif;
+  color: #043869;
+  margin-top: 5em;
+  position: relative;
+  text-align: center;
+  padding: 20px;
 }
 
-
-  form {margin-top: 4em;
-    padding:10px;
-    font-family: 'EB Garamond', serif;
-    color:#FFFFFA;
-    width:600px;
-   max-width: 100%;
-   margin: 0 auto;
-   font-size: 18px;
-   
+form {
+  margin-top: 4em;
+  padding: 10px;
+  font-family: "EB Garamond", serif;
+  color: #fffffa;
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 18px;
 }
 
-fieldset{
- margin: 0 auto;
- max-width: 100%;
- border-style: none;
-    
-   
+fieldset {
+  margin: 0 auto;
+  max-width: 100%;
+  border-style: none;
 }
 
-.form-input{
-    padding:10px;
-    border: 3px solid;
-    border-color: #043869;
-    padding:10px;
-    margin-top: 1em;
-    font-family: 'EB Garamond', serif;
-    position: relative;
-    background-image: linear-gradient( 135deg, #003399 20%, #011e60 80%);
-    box-shadow: 8px 8px 4px #7e9dcf;
-    max-width: 100%;
-} 
-
-input , #membership {
-  font-family: 'EB Garamond', serif;
-    display:flex;
-    padding:12px;
-    margin-top: 0.5em;
-    background-color: #fafafa;
-    
-}
-input:hover{
-    background-color: #8ab4f7;
-    color:#011e60;
+.form-input {
+  padding: 10px;
+  border: 3px solid;
+  border-color: #043869;
+  padding: 10px;
+  margin-top: 1em;
+  font-family: "EB Garamond", serif;
+  position: relative;
+  background-image: linear-gradient(135deg, #003399 20%, #011e60 80%);
+  box-shadow: 8px 8px 4px #7e9dcf;
+  max-width: 100%;
 }
 
-#comment{
-    width:100%;
-    height:200px;
-    font-family: 'EB Garamond', serif;
+input,
+#membership {
+  font-family: "EB Garamond", serif;
+  display: flex;
+  padding: 12px;
+  margin-top: 0.5em;
+  background-color: #fafafa;
+}
+input:hover {
+  background-color: #8ab4f7;
+  color: #011e60;
 }
 
+#comment {
+  width: 100%;
+  height: 200px;
+  font-family: "EB Garamond", serif;
+}
 
 .button-join {
-   float: right;
-    width: 85px;
-    height:35px;
-    font-size: 18px;
+  float: right;
+  width: 85px;
+  height: 35px;
+  font-size: 18px;
 
-    color:#FFFFFA;
-    background-color: #df1620;
-    margin: auto 0;
-    margin-top: 1em;
-    padding:5px;
-    justify-content: center;
-    font-family: 'EB Garamond', serif;
-    border: none;
-    box-shadow: 4px 4px 4px #7e9dcf;
+  color: #fffffa;
+  background-color: #df1620;
+  margin: auto 0;
+  margin-top: 1em;
+  padding: 5px;
+  justify-content: center;
+  font-family: "EB Garamond", serif;
+  border: none;
+  box-shadow: 4px 4px 4px #7e9dcf;
 }
 
-.button-join:hover{
-    background-color: #011e60;
-    color: #fafafa;
-    font-family: 'EB Garamond', serif;
+.button-join:hover {
+  background-color: #011e60;
+  color: #fafafa;
+  font-family: "EB Garamond", serif;
 }
- 
+
 .thank-you {
-
-    padding:20px;
-     text-align: center;
-     font-family: 'EB Garamond', serif;
-      color:#04142D;
-     width:100%;
-     height: 200px;
-   
+  padding: 20px;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  color: #04142d;
+  width: 100%;
+  height: 200px;
 }
-.thank-you h1{
+.thank-you h1 {
   margin-top: -1em;
   color: #df1620;
 }
 
-.levels{
+.levels {
   margin: 0 auto;
   color: #043869;
   width: 400px;
   max-width: 100%;
- 
+
   box-shadow: 8px 8px 4px #7e9dcf;
-  background-image: linear-gradient( 135deg, #003399 60%, #011e60 80%);
-  
+  background-image: linear-gradient(135deg, #003399 60%, #011e60 80%);
+
   width: 400px;
   border-left: 13px double #df1620;
   border-right: 13px double #df1620;
-background-color: #fafafa;
- padding-top: -15px;
-
+  background-color: #fafafa;
+  padding-top: -15px;
 }
 
-.levels h3{
-  padding:10px;
+.levels h3 {
+  padding: 10px;
   color: #df1620;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   margin-top: -0.5em;
 }
 
-.non-profit , .silver, .bronze , .gold{
- 
-background-color: #fafafa;
- padding: 10px;
+.non-profit,
+.silver,
+.bronze,
+.gold {
+  background-color: #fafafa;
+  padding: 10px;
 }
 
-.levels h2{
+.levels h2 {
   text-align: center;
 }
-
 
 /*DIRECTORY*/
 
-
-.directory{
- 
-  display:grid;
+.directory {
+  display: grid;
   grid-template-columns: 1fr;
   text-align: center;
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
   font-weight: 500;
- background-image: linear-gradient( 135deg, #003399 60%, #011e60 80%);
- border-left: 13px double #df1620;
- border-right: 13px double #df1620;
- background-color: #fafafa;
- padding-top: -15px;
- box-shadow: 8px 8px 4px #7e9dcf;
- text-align: center;
-color :#fafafa;
+  background-image: linear-gradient(135deg, #003399 60%, #011e60 80%);
+  border-left: 13px double #df1620;
+  border-right: 13px double #df1620;
+  background-color: #fafafa;
+  padding-top: -15px;
+  box-shadow: 8px 8px 4px #7e9dcf;
+  text-align: center;
+  color: #fafafa;
 
- margin-right: 2.5em;
-
-  
-
+  margin-right: 2.5em;
 }
 
-
-.div-companies  {
-background-color: #fafafa;
-padding: 5px;
-color: #003399;
-font-weight: 500;
-
-
+.div-companies {
+  background-color: #fafafa;
+  padding: 5px;
+  color: #003399;
+  font-weight: 500;
 }
-.div-companies img{
+.div-companies img {
   width: 200px;
   max-width: 100%;
   height: 200px;
 }
-.list-button, .grid-button{
+.list-button,
+.grid-button {
   display: none;
 }
 /*CONTACT US*/
 
-     figcaption{
-      font-family: 'EB Garamond', serif;
-       font-size:18px;
-       color: #043869;
-       background-color: #fafafa;
-      margin-top: -0.5em;
-      width: 200px;
-      margin: 0 auto;
+figcaption {
+  font-family: "EB Garamond", serif;
+  font-size: 18px;
+  color: #043869;
+  background-color: #fafafa;
+  margin-top: -0.5em;
+  width: 200px;
+  margin: 0 auto;
+}
+picture img[data-src] {
+  filter: blur(0.2em);
+}
 
-     }
-     picture img[data-src] {
-        filter: blur(0.2em);
-       
-      }
-      
-     picture img {
-        filter: blur(0em);
-        transition: filter 0.1s;
-      
-       
-      }
-    .board-img{
-      
-      height: 250px;
-      max-width: 100%;
-     
-     
-    }
-   picture{
-     
-    margin: 0 auto;
-     margin-top:2em;
-    background-color: #fafafa;
-     padding: 0px;
-     width: 200px;
-     box-shadow: 8px 8px  4px #7e9dcf;
-   text-align: center;
-     
-   }
-
-   .title-board{
-    text-align: center;
-   
-  }
-
- .contact-form{
-  margin-top: -3em;
- }
- .title-contact{
-  text-align:center;
+picture img {
+  filter: blur(0em);
+  transition: filter 0.1s;
+}
+.board-img {
+  height: 250px;
+  max-width: 100%;
+}
+picture {
+  margin: 0 auto;
   margin-top: 2em;
- }
- #contact-button{
-   margin-right: -0.7em;
-  
- }
+  background-color: #fafafa;
+  padding: 0px;
+  width: 200px;
+  box-shadow: 8px 8px 4px #7e9dcf;
+  text-align: center;
+}
 
- .contact-map{
+.title-board {
+  text-align: center;
+}
+
+.contact-form {
+  margin-top: -3em;
+}
+.title-contact {
+  text-align: center;
+  margin-top: 2em;
+}
+#contact-button {
+  margin-right: -0.7em;
+}
+
+.contact-map {
   display: flex;
   justify-content: center;
-  max-width:100%;
- }
+  max-width: 100%;
+}
 
- .info-quito{
+.info-quito {
   font-size: 20px;
   margin: 0 auto;
   margin-top: 2em;
-   width:400px;
-   max-width:100% ;
-  height:auto;
-   font-family: 'EB Garamond', serif;
-  color :#fafafa;
-  background-image: linear-gradient( 135deg, #003399 20%, #011e60 80%);
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  font-family: "EB Garamond", serif;
+  color: #fafafa;
+  background-image: linear-gradient(135deg, #003399 20%, #011e60 80%);
   box-shadow: 8px 8px 4px #7e9dcf;
- 
- }
-  .info-quito p{
-  padding:8px;
+}
+.info-quito p {
+  padding: 8px;
   margin-top: -0.5em;
-
-  }
-  
-  .info-quito h2{
-    padding:8px;
- 
-    font-family: 'Playfair Display', serif;
-  
-    }
- .info-quito img{
-  width:500px;
-  max-width:100% ;
- 
 }
 
-#demo-list{
+.info-quito h2 {
+  padding: 8px;
 
-list-style-type: none;
-color: #fafafa;
-padding:20px;
-width:320px;
-max-width: 100%;
-justify-items: center;
-margin: 0 auto;
-
+  font-family: "Playfair Display", serif;
+}
+.info-quito img {
+  width: 500px;
+  max-width: 100%;
 }
 
-#demographics h2{
-  font-family: 'Playfair Display', serif;
+#demo-list {
+  list-style-type: none;
+  color: #fafafa;
+  padding: 20px;
+  width: 320px;
+  max-width: 100%;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+#demographics h2 {
+  font-family: "Playfair Display", serif;
   text-align: center;
 }
 
-#quito-foto{
-  width:500px;
+#quito-foto {
+  width: 500px;
   max-width: 100%;
-
 }
-.events-title-city{
+.events-title-city {
   margin-top: 2em;
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 
   color: #003399;
-  
 }
 
 .events-city {
-  background-image: linear-gradient( 135deg, #003399 60%, #011e60 80%);
-  
-  width:400px;
+  background-image: linear-gradient(135deg, #003399 60%, #011e60 80%);
+
+  width: 400px;
   border-left: 13px double #df1620;
   border-right: 13px double #df1620;
-background-color: #fafafa;
- padding-top: -15px;
+  background-color: #fafafa;
+  padding-top: -15px;
 
   box-shadow: 8px 8px 4px #7e9dcf;
   text-align: center;
-   margin: 0 auto;
- 
-  font-weight: 500;
-  max-width:100%;
-  color :#fafafa;
+  margin: 0 auto;
 
+  font-weight: 500;
+  max-width: 100%;
+  color: #fafafa;
 }
-.events-div{
+.events-div {
   background-color: #fafafa;
   padding: 5px;
- 
+
   color: #003399;
-  font-family: 'EB Garamond', serif;
-   font-weight: 500;
-
- 
-
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
 }
-.events-title{
+.events-title {
   margin-top: 2em;
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #003399;
-
 }
 .index-events {
-  background-image: linear-gradient( 135deg, #003399 60%, #011e60 80%);
+  background-image: linear-gradient(135deg, #003399 60%, #011e60 80%);
   margin: 0 auto;
-  width:400px;
+  width: 400px;
   border-left: 13px double #df1620;
   border-right: 13px double #df1620;
-background-color: #fafafa;
- padding-top: -15px;
- margin-top: 2em;
+  background-color: #fafafa;
+  padding-top: -15px;
+  margin-top: 2em;
   box-shadow: 8px 8px 4px #7e9dcf;
   text-align: center;
-  max-width:100%;
-
+  max-width: 100%;
 }
 .events {
   background-color: #fafafa;
   padding: 5px;
   color: #003399;
-  font-family: 'EB Garamond', serif;
-   font-weight: 500;
-
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
 }
-#form-contact{
-  
+#form-contact {
   margin: 0 auto;
 }
 
-.quito-article{
-  
+.quito-article {
   margin: 0 auto;
   margin-top: 2em;
-  width:400px;
-   max-width:100% ;
-   font-family: 'EB Garamond', serif;
-   font-size: 20px;
-  color :#fafafa;
-  background-image: linear-gradient( 135deg, #003399 20%, #011e60 80%);
+  width: 400px;
+  max-width: 100%;
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+  color: #fafafa;
+  background-image: linear-gradient(135deg, #003399 20%, #011e60 80%);
   box-shadow: 8px 8px 4px #7e9dcf;
 }
-.quito-article h2{
-  padding:8px;
+.quito-article h2 {
+  padding: 8px;
 
-  font-family: 'Playfair Display', serif;
-
-  }
-.quito-article img{
-width:500px;
-max-width:100% ;
-
+  font-family: "Playfair Display", serif;
 }
-.quito-article p{
-  padding:8px;
+.quito-article img {
+  width: 500px;
+  max-width: 100%;
+}
+.quito-article p {
+  padding: 8px;
   margin-top: -0.5em;
-
-  }
-  .attribute {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    color:#003399;
-    margin: 0 auto;
-    width:400px;
-    border-left: 13px double #df1620;
-    border-right: 13px double #df1620;
+}
+.attribute {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #003399;
+  margin: 0 auto;
+  width: 400px;
+  border-left: 13px double #df1620;
+  border-right: 13px double #df1620;
   background-color: #fafafa;
-    text-decoration: none;
-    justify-content: center;
-    margin-top: -3.8em;
-  }
-
-
-  
+  text-decoration: none;
+  justify-content: center;
+  margin-top: -3.8em;
+}
